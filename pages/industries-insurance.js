@@ -8,7 +8,7 @@ function LinksExample() {
 <Container fluid className="breadcum">
 <Breadcrumb >
       <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-      <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/" active>
+      <Breadcrumb.Item href="industries-insurance" active>
       Redefining Value Chain Management
       </Breadcrumb.Item>
     </Breadcrumb>

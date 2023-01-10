@@ -14,7 +14,7 @@ function LinksExample() {
 <li><Link href="/enterprise-product-management">Enterprise Product Management</Link></li>    
 <li><Link href="/dynamic-offer-management">Dynamic Offer Management</Link></li>    
 <li><Link href="/deal-management">Deal Management</Link></li>    
-<li><Link href="/relationship-based-pricing-managemen">Relationship-Based Pricing Management</Link></li>    
+<li><Link href="/relationship-based-pricing-management">Relationship-Based Pricing Management</Link></li>    
 <li><Link href="/enterprise-billing-and-statements-management">Enterprise Billing and Statements Management</Link></li>    
 <li><Link href="/ecosystem-management-and-monetization">Ecosystem Management and Monetisation</Link></li>    
 <li><Link href="/benefits-and-loyalty-management">Benefits and Loyalty Management</Link></li>
@@ -29,7 +29,7 @@ function LinksExample() {
 <li><Link href="/financial-services">Financial Services</Link></li>
 <li><Link href="/telecom">Telecom</Link></li>
 <li><Link href="/travel">Travel</Link></li>
-<li><Link href="/suntec-industries-insurance">Insurance</Link></li>
+<li><Link href="/industries-insurance">Insurance</Link></li>
 </ul>
 </Col>
 <Col sm={3}>

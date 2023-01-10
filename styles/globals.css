@@ -18,6 +18,10 @@
                     background-color: #8CDEE2;
                 }
                 
+                .wbg-sun {
+                    background-color: #913FA1;
+                }
+                
                 .wbg-gy {
                     background-color: #f4f4f4;
                 }
@@ -188,6 +192,14 @@
                     border-radius: 0px!important;
                     /* width: 250px; */
                     padding: 11px !important;
+                }
+                
+                .w-btn {
+                    border: 2px solid #fff !important;
+                    border-radius: 0px!important;
+                    padding: 11px !important;
+                    width: 300px;
+                    background-color: #78d9de00 !important;
                 }
                 
                 .section-first {
@@ -462,7 +474,7 @@
                 .b-text {
                     background-color: #95519e;
                     color: #ffff;
-                    height: 340px;
+                    height: auto;
                     text-align: start;
                     padding: 41px;
                     width: 550px;

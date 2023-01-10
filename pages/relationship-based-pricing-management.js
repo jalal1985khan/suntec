@@ -8,20 +8,20 @@ function LinksExample() {
 <Container fluid className="breadcum">
 <Breadcrumb >
       <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-      <Breadcrumb.Item href="/dynamic-offer-management" active>
-      Dynamic Offer Management
+      <Breadcrumb.Item href="/relationship-based-pricing-management" active>
+      Relationship-based Pricing Management
       </Breadcrumb.Item>
     </Breadcrumb>
 </Container>
 <Container className="p-3 b-banner" fluid style={{ 
-      backgroundImage: `url("/images/dynamic_offer_management.jpg")` 
+      backgroundImage: `url("/images/relationship_based-pricing_management.jpg")` 
     }}>
 
 <Row>
 <Col>
 <div className="b-text">
-<h1>Dynamic Offer Management</h1>
-<p>Grow and enrich your customer relationships by quickly launching highly personalized, contextual offers.</p>
+<h1>Relationship-based Pricing Management</h1>
+<p>Bring pricing to the forefront of your customer engagement strategy by creating an enterprise pricing master for fees, rates and charges that win the hearts and minds of your customers.</p>
 <Button>Read the datasheet</Button>
 </div>
 </Col> 
@@ -35,44 +35,52 @@ function LinksExample() {
 </Col>
 <Col sm={6}>
 <h2 className="fs-1">Why SunTec Xelerate?</h2>
-<p className="fs-5">SunTec&apos;s Dynamic Offer Management on SunTec Xelerate platform is a digital innovation middle layer that can easily integrate with the bank&apos;s existing technology landscape and provide a highly configurable offer management capability that enables customer choice, enhances customer relationships, reduces time and cost to market and propels growth through up-sell and cross-sell capabilities.</p>
+<p className="fs-5">SunTec&apos;s Relationship-based Pricing Management on SunTec Xelerate platform complements and significantly augments existing core banking capabilities and enables contextual pricing. As an enterprise pricing master, SunTec Xelerate enables fairness, enhances transparency for all stakeholders, improves control and governance and enhances revenue. The rule-based capability further automates the pricing process to provide agility, improve maintainability and allow end-to-end auditability and traceability.</p>
 </Col>
 </Row>    
 </Container>
+<Container className="wbg-sun text-center d-flex flex-column justify-content-center" style={{height: 10 +'em'}}>
+<h2 className="text-white fs-2 mb-4">Discover related resources curated just for you</h2>
+<Row>
+<Col><Button className="w-btn">Articles</Button></Col>
+<Col><Button className="w-btn">White Papers</Button></Col>
+<Col><Button className="w-btn">Case Studeis</Button></Col>    
+</Row>
 
+</Container>
 <Container className="mb-5">
-
-<h1 className="fs-2 mt-5 mb-5">Features of SunTec&apos;s Dynamic Offer Management</h1>
+<h1 className="fs-2 mt-5 mb-5">Features of SunTec&apos;s Relationship-based Pricing Management</h1>
 <Row>
 <Col>
 <Card className="c_shadow" style={{height:18+ 'em'}}>
-      <Card.Img className="card-icon-left" src="/images/icon_1.png" />
+      <Card.Img className="card-icon-left" src="/images/icon_6.png" />
       <Card.Body className="c_body">
-        <Card.Title>Contextual</Card.Title>
+        <Card.Title>Relationship-based</Card.Title>
         <Card.Text>
-        Creation and provision of the right offers to each customer based on their choice and need
+        Pricing based on holistic relationship value across
+customer and customer groups including complex relational conditions
         </Card.Text>
       </Card.Body>
     </Card>
 </Col>
 <Col>
 <Card className="c_shadow" style={{height:18+ 'em'}}>
-      <Card.Img className="card-icon-left" src="/images/icon_2.png" />
-      <Card.Body className="c_body">
-        <Card.Title>Multi-layered</Card.Title>
-        <Card.Text>
-        Product, Bundle, Service and Benefit Offers for individual customers, accounts and dynamic sub segments
-        </Card.Text>
-      </Card.Body>
-    </Card>
-</Col>
-<Col>
-<Card className="c_shadow" style={{height:18+ 'em'}}>
-      <Card.Img className="card-icon-left" src="/images/icon_3.png" />
+      <Card.Img className="card-icon-left" src="/images/icon4_1.png" />
       <Card.Body className="c_body">
         <Card.Title>Hyper-personalized</Card.Title>
         <Card.Text>
-        Exhaustive and rule-driven qualification and eligibility criteria drive personalized and contextual application of offers
+        Pricing to the segment of one – contextual and real-time pricing driving highly personalized pricing strategies
+        </Card.Text>
+      </Card.Body>
+    </Card>
+</Col>
+<Col>
+<Card className="c_shadow" style={{height:18+ 'em'}}>
+      <Card.Img className="card-icon-left" src="/images/icon4_2.png" />
+      <Card.Body className="c_body">
+        <Card.Title>Comprehensive Coverage</Card.Title>
+        <Card.Text>
+        Unified capability to manage all dimensions of value including fees, charges, rates, benefits (cash and non-cash), commissions, taxes
         </Card.Text>
       </Card.Body>
     </Card>
@@ -82,37 +90,52 @@ function LinksExample() {
 <Row>
 <Col>
 <Card className="c_shadow" style={{height:18+ 'em'}}>
-      <Card.Img className="card-icon-left" src="/images/icon_4.png" />
+      <Card.Img className="card-icon-left" src="/images/icon4_3.png" />
       <Card.Body className="c_body">
-        <Card.Title>Life Cycle Management</Card.Title>
+        <Card.Title>Agile and Configurable System</Card.Title>
         <Card.Text>
-        Quick offer roll-out and offer switching and periodic review and expiry management ensure the right portfolio of offers
+        Configurable, rule-based pricing allowing for quick launch and change management with reduced launch and operating costs
         </Card.Text>
       </Card.Body>
     </Card>
 </Col>
 <Col>
 <Card className="c_shadow" style={{height:18+ 'em'}}>
-      <Card.Img className="card-icon-left" src="/images/icon_5.png" />
+      <Card.Img className="card-icon-left" src="/images/icon_25.png" />
       <Card.Body className="c_body">
-        <Card.Title>Highly Flexible and Configurable</Card.Title>
+        <Card.Title>Enterprise Approach</Card.Title>
         <Card.Text>
-        Easy creation and management of offers with intuitive UX for different personas
+        Enterprise level capability for pricing of all products, services, events and transactions
         </Card.Text>
       </Card.Body>
     </Card>
 </Col>
 <Col>
 <Card className="c_shadow" style={{height:18+ 'em'}}>
-      <Card.Img className="card-icon-left" src="/images/icon_6.png" />
+      <Card.Img className="card-icon-left" src="/images/icon_22.png" />
       <Card.Body className="c_body">
-        <Card.Title>Automated</Card.Title>
+        <Card.Title>Insights-driven</Card.Title>
         <Card.Text>
-        Insight and rule-driven automation of the entire process
+        Reduced risk through real-time analytics driven decision-making, based on insights through rules and persona-based dashboards
         </Card.Text>
       </Card.Body>
     </Card>
 </Col>
+</Row>
+<Row>
+<Col>
+<Card className="c_shadow" style={{height:18+ 'em'}}>
+      <Card.Img className="card-icon-left" src="/images/icon4_4.png" />
+      <Card.Body className="c_body">
+        <Card.Title>Regulatory Compliant</Card.Title>
+        <Card.Text>
+        End-to-end auditing with traceability combined with real-time data management enhances regulatory compliance and ensures fairness and transparency
+        </Card.Text>
+      </Card.Body>
+    </Card>
+</Col>
+<Col></Col>
+<Col></Col>
 </Row>
 </Container>
 <Container>
@@ -121,11 +144,10 @@ function LinksExample() {
 <Row>
   <Col className="center"><img src="/images/xelerate.png" height="300"/></Col>
   <Col>
-  <h3 className="text-white fs-2">&quot;Enable customer centricity with the right solution to each customer&apos;s context and need&quot;</h3>
-<p className="text-white fs-5">Roll out contextual offers in real time with SunTec&apos;s Dynamic Offer Management</p>
+  <h3 className="text-white fs-2">&quot;Enhance customer relationships and improve operational efficiency through differential and automated pricing.&quot;</h3>
   <ul className="mt-5">
-   <li className="text-white fs-5"><strong>Offer orchestration like never before:</strong> Manage the entire offer development lifecycle in real time, from offer ideation via real-time customer transaction tracking, to simulation and testing, and finally offer fulfilment and tracking.</li> 
-   <li className="text-white fs-5"><strong>Roll out offers in real time:</strong>Get an insight into customer behavior to roll out the right offers rapidly, thereby enhancing customer engagement and customer lifetime value and eliminating revenue leakage.</li>
+   <li className="text-white fs-5"><strong>Engage and retain customers:</strong> Deploy relationship-based pricing, offers and rewards to cater to customer demands and achieve sustainable growth.</li> 
+   <li className="text-white fs-5"><strong>No more information silos:</strong> Achieve customer centricity with the power of data and innovative relationship-based offerings.</li>
   </ul>
   </Col>
 </Row>
