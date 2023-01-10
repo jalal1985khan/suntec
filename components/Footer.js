@@ -13,7 +13,7 @@ function LinksExample() {
 <ul className="text-white list-inline">
 <li><Link href="/enterprise-product-management">Enterprise Product Management</Link></li>    
 <li><Link href="/dynamic-offer-management">Dynamic Offer Management</Link></li>    
-<li><Link href="/financial-services">Deal Management</Link></li>    
+<li><Link href="/deal-management">Deal Management</Link></li>    
 <li><Link href="/financial-services">Relationship-Based Pricing Management</Link></li>    
 <li><Link href="/financial-services">Enterprise Billing and Statements Management</Link></li>    
 <li><Link href="/financial-services">Ecosystem Management and Monetisation</Link></li>    
