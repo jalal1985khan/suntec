@@ -1,5 +1,6 @@
 import {Container,Row, Col} from 'react-bootstrap';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function LinksExample() {
   return (
@@ -10,14 +11,14 @@ function LinksExample() {
 <h2 className="text-white fs-5">Products</h2>
 <hr className="border"/>
 <ul className="text-white list-inline">
-<li>Enterprise Product Management</li>    
-<li>Dynamic Offer Management</li>    
-<li>Deal Management</li>    
-<li>Relationship-Based Pricing Management</li>    
-<li>Enterprise Billing and Statements Management</li>    
-<li>Ecosystem Management and Monetisation</li>    
-<li>Benefits and Loyalty Management</li>
-<li>Enterprise Indirect Taxation Management</li>    
+<li><Link href="/enterprise-product-management">Enterprise Product Management</Link></li>    
+<li><Link href="/dynamic-offer-management">Dynamic Offer Management</Link></li>    
+<li><Link href="/financial-services">Deal Management</Link></li>    
+<li><Link href="/financial-services">Relationship-Based Pricing Management</Link></li>    
+<li><Link href="/financial-services">Enterprise Billing and Statements Management</Link></li>    
+<li><Link href="/financial-services">Ecosystem Management and Monetisation</Link></li>    
+<li><Link href="/financial-services">Benefits and Loyalty Management</Link></li>
+<li><Link href="/financial-services">Enterprise Indirect Taxation Management</Link></li>    
 
 </ul>
 </Col>
@@ -25,10 +26,10 @@ function LinksExample() {
 <h2 className="text-white fs-5">Industries</h2>
 <hr className="border"/>
 <ul className="text-white list-inline">
-<li>Financial Services</li>
-<li>Telecom</li>
-<li>Travel</li>
-<li>Insurance</li>
+<li><Link href="/financial-services">Financial Services</Link></li>
+<li><Link href="/telecom">Telecom</Link></li>
+<li><Link href="/travel">Travel</Link></li>
+<li><Link href="/suntec-industries-insurance">Insurance</Link></li>
 </ul>
 </Col>
 <Col sm={3}>
