@@ -35,14 +35,14 @@ function LinksExample() {
 </Col>
 <Col sm={6}>
 <h2 className="fs-1">Why SunTec Xelerate?</h2>
-<p className="fs-5">SunTec’s Dynamic Offer Management on SunTec Xelerate platform is a digital innovation middle layer that can easily integrate with the bank’s existing technology landscape and provide a highly configurable offer management capability that enables customer choice, enhances customer relationships, reduces time and cost to market and propels growth through up-sell and cross-sell capabilities.</p>
+<p className="fs-5">SunTec&apos;s Dynamic Offer Management on SunTec Xelerate platform is a digital innovation middle layer that can easily integrate with the bank&apos;s existing technology landscape and provide a highly configurable offer management capability that enables customer choice, enhances customer relationships, reduces time and cost to market and propels growth through up-sell and cross-sell capabilities.</p>
 </Col>
 </Row>    
 </Container>
 
 <Container className="mb-5">
 
-<h1 className="fs-2 mt-5 mb-5">Features of SunTec’s Dynamic Offer Management</h1>
+<h1 className="fs-2 mt-5 mb-5">Features of SunTec&apos;s Dynamic Offer Management</h1>
 <Row>
 <Col>
 <Card className="c_shadow" style={{height:18+ 'em'}}>
@@ -121,8 +121,8 @@ function LinksExample() {
 <Row>
   <Col className="center"><img src="/images/xelerate.png" height="300"/></Col>
   <Col>
-  <h3 className="text-white fs-2">"Enable customer centricity with the right solution to each customer’s context and need"</h3>
-<p className="text-white fs-5">Roll out contextual offers in real time with SunTec’s Dynamic Offer Management</p>
+  <h3 className="text-white fs-2">&quot;Enable customer centricity with the right solution to each customer&apos;s context and need&quot;</h3>
+<p className="text-white fs-5">Roll out contextual offers in real time with SunTec&apos;s Dynamic Offer Management</p>
   <ul className="mt-5">
    <li className="text-white fs-5"><strong>Offer orchestration like never before:</strong> Manage the entire offer development lifecycle in real time, from offer ideation via real-time customer transaction tracking, to simulation and testing, and finally offer fulfilment and tracking.</li> 
    <li className="text-white fs-5"><strong>Roll out offers in real time:</strong>Get an insight into customer behavior to roll out the right offers rapidly, thereby enhancing customer engagement and customer lifetime value and eliminating revenue leakage.</li>
@@ -229,7 +229,7 @@ function LinksExample() {
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>
@@ -245,7 +245,7 @@ function LinksExample() {
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>
@@ -261,7 +261,7 @@ function LinksExample() {
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>

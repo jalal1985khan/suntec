@@ -8,7 +8,7 @@ function LinksExample() {
 <Container fluid className="breadcum">
 <Breadcrumb >
       <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-      <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/" active>
+      <Breadcrumb.Item href="/financial-services" active>
       Simplifying Digital Transformation
       </Breadcrumb.Item>
     </Breadcrumb>
@@ -31,7 +31,7 @@ function LinksExample() {
 <h1 className="fs-2 mt-5 mb-5">The Transformation Journey Has Just Begun</h1>
 <p className="fs-5">Banks have spent a lot of money on the customer facing layer, which results in improved customer ratings. But most of them are still unable to utilize data to provide innovative products and personalize the customer experience.</p>
 <p className="fs-5">A big impediment to owning the customer experience is the “speed to market” which remains a challenge for most banks.</p>
-<p className="fs-5">In today’s scenario, banks face unorthodox competition from the likes of Google and Facebook, to name a few. To remain the choice of customers and be competitive banks must aggressively adopt the digital route and transform their go to market approach.</p>
+<p className="fs-5">In today&apos;s scenario, banks face unorthodox competition from the likes of Google and Facebook, to name a few. To remain the choice of customers and be competitive banks must aggressively adopt the digital route and transform their go to market approach.</p>
 
 <h2 className="fs-2 mt-5 mb-5">The Challenges</h2>
 <Row>  
@@ -52,7 +52,7 @@ function LinksExample() {
       <Card.Body>
         <Card.Title>Digital Savvy Customer</Card.Title>
         <Card.Text>
-        Today’s customers demand faster processes, more options and better experience
+        Today&apos;s customers demand faster processes, more options and better experience
         </Card.Text>
       </Card.Body>
     </Card>
@@ -76,7 +76,7 @@ function LinksExample() {
       <Card.Body>
         <Card.Title>Expanding Competitive Landscape</Card.Title>
         <Card.Text>
-        BigTech & FinTech's foray into the banking world has added to the pressure on banks to own the customer experience
+        BigTech & FinTech&apos;s foray into the banking world has added to the pressure on banks to own the customer experience
         </Card.Text>
       </Card.Body>
     </Card>
@@ -114,7 +114,7 @@ function LinksExample() {
   <Col>
   <h3 className="text-white fs-2">How SunTec Simplifies Your Transformation Journey? (Financial services)</h3>
   <ul className="mt-5">
-   <li className="text-white fs-5"><strong>Adopt digital transformation without replacing your legacy core systems:</strong> Add customer engagement capabilities by ‘hollowing out customer engagement functions’ and managing it as a horizontal cross-enterprise layer.</li> 
+   <li className="text-white fs-5"><strong>Adopt digital transformation without replacing your legacy core systems:</strong> Add customer engagement capabilities by &apos;hollowing out customer engagement functions&apos; and managing it as a horizontal cross-enterprise layer.</li> 
    <li className="text-white fs-5"><strong>Transition from being product-focused to customer-first:</strong>
 Get end-to-end product innovation capabilities, sophisticated customer data management, partner ecosystem and revenue and pricing management. </li>
   </ul>
@@ -193,7 +193,7 @@ right time.
       <Card.Body className="c_body">
         <Card.Title>Dynamic Offer Management</Card.Title>
         <Card.Text>
-        Track your customers’ lifetime journey, get a complete view of the relationship and make highly personalized offers. You can even bundle offers from other partners in your ecosystem to make an offer your customers just can’t refuse.
+        Track your customers&apos; lifetime journey, get a complete view of the relationship and make highly personalized offers. You can even bundle offers from other partners in your ecosystem to make an offer your customers just can&apos;t refuse.
         </Card.Text>
       </Card.Body>
       <Card.Body>
@@ -223,7 +223,7 @@ right time.
       <Card.Body className="c_body">
         <Card.Title>Open Banking Monetization</Card.Title>
         <Card.Text>
-        Embrace the open banking economy – add new business models and revenue sources. Our easy to
+        Embrace the open banking economy - add new business models and revenue sources. Our easy to
 manage partner ecosystem allows you to transition from being a mere utility provider to a true value
 aggregator.
         </Card.Text>
@@ -268,7 +268,7 @@ Your one-stop-solution for all GST and VAT regulatory compliance requirements. C
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>
@@ -284,7 +284,7 @@ Your one-stop-solution for all GST and VAT regulatory compliance requirements. C
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>
@@ -300,7 +300,7 @@ Your one-stop-solution for all GST and VAT regulatory compliance requirements. C
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>

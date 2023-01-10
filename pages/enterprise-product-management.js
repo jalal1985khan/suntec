@@ -8,7 +8,7 @@ function LinksExample() {
 <Container fluid className="breadcum">
 <Breadcrumb >
       <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-      <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/" active>
+      <Breadcrumb.Item href="/enterprise-product-management" active>
       Enterprise Product Management
       </Breadcrumb.Item>
     </Breadcrumb>
@@ -35,14 +35,15 @@ function LinksExample() {
 </Col>
 <Col sm={6}>
 <h2 className="fs-1">Why SunTec Xelerate?</h2>
-<p className="fs-5">SunTec’s Enterprise Product Management on SunTec Xelerate platform enables a single source of truth for all products and services for the financial services, telecom, travel and insurance sectors. Combined with an end-to-end life cycle management view, this master catalog enables managing of personalized products, including both internal and external partner products. It helps prevent wrong selling through enhanced controls and enables product convergence. SunTec’s Xelerate platform gives the flexibility to define any product or service across all lines of business. SunTec Xelerate further provides comprehensive traceability across the product life cycle and improves time and cost to market significantly.</p>
+<p className="fs-5">SunTec&apos;s Enterprise Product Management on SunTec Xelerate platform enables a single source of truth for all products and services for the financial services, telecom, travel and insurance sectors. Combined with an end-to-end life cycle management view, this master catalog enables managing of personalized products, including both internal and external partner products. It helps prevent wrong selling through enhanced controls and enables product convergence. 
+SunTec&apos;s Xelerate platform gives the flexibility to define any product or service across all lines of business. SunTec Xelerate further provides comprehensive traceability across the product life cycle and improves time and cost to market significantly.</p>
 </Col>
 </Row>    
 </Container>
 
 <Container className="mb-5">
 
-<h1 className="fs-2 mt-5 mb-5">Features of SunTec’s Enterprise Product Management</h1>
+<h1 className="fs-2 mt-5 mb-5">Features of SunTec&apos;s Enterprise Product Management</h1>
 <Row>
 <Col>
 <Card className="c_shadow" style={{height:18+ 'em'}}>
@@ -97,7 +98,7 @@ function LinksExample() {
       <Card.Body className="c_body">
         <Card.Title>Rule-based</Card.Title>
         <Card.Text>
-        Rich set of configurable rules to fine tune product’s business behaviour based on context
+        Rich set of configurable rules to fine tune product&apos;s business behaviour based on context
         </Card.Text>
       </Card.Body>
     </Card>
@@ -158,12 +159,12 @@ function LinksExample() {
 <Row>
   <Col className="center"><img src="/images/xelerate.png" height="300"/></Col>
   <Col>
-  <h3 className="text-white fs-2">"Create a single source of truth for all products, services, bundles and offers."</h3>
+  <h3 className="text-white fs-2">&quot;Create a single source of truth for all products, services, bundles and offers.&quot;</h3>
   <ul className="mt-5">
    <li className="text-white fs-5"><strong>A central repository of products and services:</strong> Create a central repository of both internal as well as third party products and services with complete life cycle management from ideation to expiry.</li> 
    <li className="text-white fs-5"><strong>Get more control with a layered architecture:</strong> Establish an enterprise wide, hierarchical capability allowing central management, control and tracking of all market facing products. Consequently, prevent miss-selling and enable the right choice for each customer.</li>
    <li className="text-white fs-5"><strong>Manage product lifecycle with deep insights:</strong>Ideate and launch the right products, monitor and track performance of existing products and drive product reviews, renewals and expiry.</li>
-   <li className="text-white fs-5"><strong>Depend on an intuitive, easy-to-use framework:</strong> With extensive configuration ensure rapid time to market and easy maintenance. Enable seamless integration with the organization’s ecosystem with our extensive set of APIs.</li>
+   <li className="text-white fs-5"><strong>Depend on an intuitive, easy-to-use framework:</strong> With extensive configuration ensure rapid time to market and easy maintenance. Enable seamless integration with the organization&apos;s ecosystem with our extensive set of APIs.</li>
   </ul>
   </Col>
 </Row>
@@ -288,7 +289,7 @@ process, from selling to billing
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>
@@ -304,7 +305,7 @@ process, from selling to billing
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>
@@ -320,7 +321,7 @@ process, from selling to billing
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          bulk of the card&apos;s content.
         </Card.Text>
       </Card.Body>
       <Card.Body>
