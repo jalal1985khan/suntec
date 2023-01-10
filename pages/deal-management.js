@@ -1,4 +1,5 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button} from 'react-bootstrap';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 function LinksExample() {
@@ -22,7 +23,7 @@ function LinksExample() {
 <div className="b-text">
 <h1>Dynamic Offer Management</h1>
 <p>Grow and enrich your customer relationships by quickly launching highly personalized, contextual offers.</p>
-<Button>Read the datasheet</Button>
+<Link href="/" className="r-btn">Read the datasheet</Link>
 </div>
 </Col> 
 <Col></Col> 

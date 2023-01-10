@@ -1,4 +1,5 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button} from 'react-bootstrap';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 function LinksExample() {
@@ -22,7 +23,7 @@ function LinksExample() {
 <div className="b-text">
 <h1>Enterprise Billing and Statements Management</h1>
 <p>Increase customer trust and transparency through accurate billing and prevent revenue leakage. Build an enterprise capability for multi-product, multi-entity and hierarchical invoicing for all stakeholders.</p>
-<Button>Read the datasheet</Button>
+<Link href="/" className="r-btn">Read the datasheet</Link>
 </div>
 </Col> 
 <Col></Col> 
