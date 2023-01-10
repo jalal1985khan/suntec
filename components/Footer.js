@@ -14,11 +14,11 @@ function LinksExample() {
 <li><Link href="/enterprise-product-management">Enterprise Product Management</Link></li>    
 <li><Link href="/dynamic-offer-management">Dynamic Offer Management</Link></li>    
 <li><Link href="/deal-management">Deal Management</Link></li>    
-<li><Link href="/financial-services">Relationship-Based Pricing Management</Link></li>    
-<li><Link href="/financial-services">Enterprise Billing and Statements Management</Link></li>    
-<li><Link href="/financial-services">Ecosystem Management and Monetisation</Link></li>    
-<li><Link href="/financial-services">Benefits and Loyalty Management</Link></li>
-<li><Link href="/financial-services">Enterprise Indirect Taxation Management</Link></li>    
+<li><Link href="/relationship-based-pricing-managemen">Relationship-Based Pricing Management</Link></li>    
+<li><Link href="/enterprise-billing-and-statements-management">Enterprise Billing and Statements Management</Link></li>    
+<li><Link href="/ecosystem-management-and-monetization">Ecosystem Management and Monetisation</Link></li>    
+<li><Link href="/benefits-and-loyalty-management">Benefits and Loyalty Management</Link></li>
+<li><Link href="/enterprise-indirect-taxation-management">Enterprise Indirect Taxation Management</Link></li>    
 
 </ul>
 </Col>
