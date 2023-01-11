@@ -601,4 +601,20 @@
                     .company-img {
                         width: 30% !important;
                     }
+                    
+                    .company-btn {
+                        width: 150px !important;
+                        background: black !important;
+                        border: 0px !important;
+                        border-radius: 0px !important;
+                        height: 40px;
+                    }
+                    
+                    .profile.offcanvas.offcanvas-start.show {
+                        width: 60%;
+                    }
+                    
+                    .pro-img {
+                        width: 20% !important;
+                    }
                     /*   card design template start here */
