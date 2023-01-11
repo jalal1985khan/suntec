@@ -68,7 +68,7 @@ function LinksExample() {
 <h2 className="text-white fs-5">About</h2>
 <hr className="border"/>
 <ul className="text-white list-inline">
-<li>Company</li>
+<li><Link href="/company">Company</Link></li>
 <li>Contact Us</li>
 <li>Events</li>
 <li>Careers</li>

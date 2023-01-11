@@ -1,555 +1,604 @@
-                @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-                * {
-                    font-family: 'Open Sans', sans-serif;
-                }
-                
-                html,
-                body {
-                    padding: 0;
-                    margin: 0;
-                    font-family: 'Open Sans', sans-serif;
-                }
-                
-                .txt-main {
-                    color: #95519e !important;
-                }
-                
-                .wbg-main {
-                    background-color: #8CDEE2;
-                }
-                
-                .wbg-sun {
-                    background-color: #913FA1;
-                }
-                
-                .wbg-gy {
-                    background-color: #f4f4f4;
-                }
-                
-                .wbg-black {
-                    background-color: black;
-                }
-                
-                .nav-link {
-                    font-size: 0.95rem;
-                }
-                
-                #basic-nav-dropdown {
-                    font-size: 0.95rem;
-                }
-                
-                #seeMoreLink {
-                    color: #607d8b;
-                }
-                
-                #seeMoreLink:hover {
-                    color: black;
-                    font-weight: 400;
-                }
-                
-                .dropdown-menu {
-                    padding: 1em;
-                }
-                
-                .dropdown-item:hover {
-                    outline: none;
-                    box-shadow: none;
-                    background: none;
-                }
-                
-                .dropdown-item a:hover {
-                    color: black;
-                }
-                
-                .dropdown-item {
-                    height: 2em;
-                    padding-left: 0em;
-                }
-                
-                .dropdown-header {
-                    font-weight: 600;
-                    padding-left: 0em;
-                }
-                
-                @media only screen and (min-width: 600px) {
-                    .eventsNav {
-                        width: 22em;
-                        padding-bottom: 1em;
+                    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+                    * {
+                        font-family: 'Open Sans', sans-serif;
                     }
-                }
-                
-                .h_alert {
-                    width: 80% !important;
-                    background-color: #BC91C1;
-                    height: 100px;
-                }
-                
-                .f_content {
-                    width: 90% !important;
-                }
-                
-                .b_content {
-                    width: 90% !important;
-                    height: 550px;
-                }
-                
-                .f_hover {
-                    width: 209px !important;
-                    height: 145px;
-                    padding-top: 31px;
-                }
-                
-                .f_hover:hover #featureIcon3 {
-                    /* border-radius: 16px; */
-                    fill: #fff !important;
-                }
-                
-                .f_hover:hover #featureIcon2 {
-                    /* border-radius: 16px; */
-                    fill: #fff !important;
-                }
-                
-                .f_hover:hover #featureIcon1 {
-                    /* border-radius: 16px; */
-                    fill: #fff !important;
-                }
-                
-                .f_hover:hover {
-                    background-color: #95519e;
-                    color: #fff;
-                    width: 209px !important;
-                    height: 145px;
-                    padding-top: 31px;
-                    border-radius: 20px;
-                    transition: background 1s, border-radius 1s;
-                }
-                
-                .m-heading {
-                    font-size: 19px;
-                    font-weight: 400;
-                    line-height: 1.2em;
-                    text-align: start;
-                    margin-bottom: 40px;
-                    transition: all 1.5s ease 0s;
-                }
-                
-                .s-heading {
-                    font-weight: 600;
-                    text-align: start;
-                    font-size: 24px;
-                    line-height: 1.2em;
-                }
-                
-                .s-text {
-                    font-size: 18px;
-                    text-align: start;
-                }
-                
-                .slide-wrapper:hover {
-                    background-image: url(https://www.suntecgroup.com/wp-content/uploads/2022/05/2-bg-new_.png);
-                }
-                
-                .slide-body {
-                    display: none;
-                    overflow: hidden;
-                }
-                
-                .section-first:hover .slide-body {
-                    display: block;
-                    animation: fade-bottom 0.5s ease-in;
-                    overflow: hidden;
-                }
-                
-                .section-first:hover .m-heading {
-                    display: block;
-                    animation: fade-up 0.5s ease-in;
-                    overflow: hidden;
-                }
-                
-                .section-first:hover .s-heading {
-                    display: block;
-                    animation: fade-up 0.5s ease-in;
-                    overflow: hidden;
-                }
-                
-                .section-first:hover .slide-btn {
-                    display: block;
-                    animation: fade-up 0.5s ease-in;
-                    overflow: hidden;
-                }
-                
-                .slide-btn {
-                    background-color: #95519e !important;
-                    border: 0px !important;
-                    border-radius: 0px!important;
-                    width: 250px;
-                    padding: 11px !important;
-                }
-                
-                .b-btn {
-                    background-color: #95519e !important;
-                    border: 0px !important;
-                    border-radius: 0px!important;
-                    /* width: 250px; */
-                    padding: 11px !important;
-                }
-                
-                .w-btn {
-                    border: 2px solid #fff !important;
-                    border-radius: 0px!important;
-                    padding: 11px !important;
-                    width: 300px;
-                    background-color: #78d9de00 !important;
-                }
-                
-                .r-btn {
-                    font-size: 16px;
-                    font-weight: 400;
-                    fill: #96509F;
-                    color: #96509F;
-                    background-color: transparent;
-                    background-image: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
-                    border-radius: 0px 0px 0px 0px;
-                    text-decoration: none;
-                    height: auto;
-                    width: 100%;
-                    padding: 10px;
-                }
-                
-                .section-first {
-                    height: 600px;
-                    width: 410px !important;
-                    background-color: #c9eff2;
-                    overflow: hidden;
-                    margin: 5px;
-                }
-                
-                .show-latam {
-                    height: 600px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-content: center;
-                    transition: all 1.5s ease 0s;
-                }
-                
-                .section-first:hover {
-                    background-color: #78D9DE;
-                    cursor: pointer;
-                    background-image: url(https://www.suntecgroup.com/wp-content/uploads/2022/05/2-bg-new_.png);
-                    height: 600px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                }
-                
-                @keyframes fade-bottom {
-                    0% {
-                        transform: translateY(100px);
+                    
+                    html,
+                    body {
+                        padding: 0;
+                        margin: 0;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    
+                    .txt-main {
+                        color: #95519e !important;
+                    }
+                    
+                    .wbg-main {
+                        background-color: #8CDEE2;
+                    }
+                    
+                    .wbg-sun {
+                        background-color: #913FA1;
+                    }
+                    
+                    .wbg-gy {
+                        background-color: #f4f4f4;
+                    }
+                    
+                    .wbg-black {
+                        background-color: black;
+                    }
+                    
+                    .nav-link {
+                        font-size: 0.95rem;
+                    }
+                    
+                    #basic-nav-dropdown {
+                        font-size: 0.95rem;
+                    }
+                    
+                    #seeMoreLink {
+                        color: #607d8b;
+                    }
+                    
+                    #seeMoreLink:hover {
+                        color: black;
+                        font-weight: 400;
+                    }
+                    
+                    .dropdown-menu {
+                        padding: 1em;
+                    }
+                    
+                    .dropdown-item:hover {
+                        outline: none;
+                        box-shadow: none;
+                        background: none;
+                    }
+                    
+                    .dropdown-item a:hover {
+                        color: black;
+                    }
+                    
+                    .dropdown-item {
+                        height: 2em;
+                        padding-left: 0em;
+                    }
+                    
+                    .dropdown-header {
+                        font-weight: 600;
+                        padding-left: 0em;
+                    }
+                    
+                    @media only screen and (min-width: 600px) {
+                        .eventsNav {
+                            width: 22em;
+                            padding-bottom: 1em;
+                        }
+                    }
+                    
+                    .h_alert {
+                        width: 80% !important;
+                        background-color: #BC91C1;
+                        height: 100px;
+                    }
+                    
+                    .f_content {
+                        width: 90% !important;
+                    }
+                    
+                    .b_content {
+                        width: 90% !important;
+                        height: 550px;
+                    }
+                    
+                    .f_hover {
+                        width: 209px !important;
+                        height: 145px;
+                        padding-top: 31px;
+                    }
+                    
+                    .f_hover:hover #featureIcon3 {
+                        /* border-radius: 16px; */
+                        fill: #fff !important;
+                    }
+                    
+                    .f_hover:hover #featureIcon2 {
+                        /* border-radius: 16px; */
+                        fill: #fff !important;
+                    }
+                    
+                    .f_hover:hover #featureIcon1 {
+                        /* border-radius: 16px; */
+                        fill: #fff !important;
+                    }
+                    
+                    .f_hover:hover {
+                        background-color: #95519e;
+                        color: #fff;
+                        width: 209px !important;
+                        height: 145px;
+                        padding-top: 31px;
+                        border-radius: 20px;
+                        transition: background 1s, border-radius 1s;
+                    }
+                    
+                    .m-heading {
+                        font-size: 19px;
+                        font-weight: 400;
+                        line-height: 1.2em;
+                        text-align: start;
+                        margin-bottom: 40px;
+                        transition: all 1.5s ease 0s;
+                    }
+                    
+                    .s-heading {
+                        font-weight: 600;
+                        text-align: start;
+                        font-size: 24px;
+                        line-height: 1.2em;
+                    }
+                    
+                    .s-text {
+                        font-size: 18px;
+                        text-align: start;
+                    }
+                    
+                    .slide-wrapper:hover {
+                        background-image: url(https://www.suntecgroup.com/wp-content/uploads/2022/05/2-bg-new_.png);
+                    }
+                    
+                    .slide-body {
+                        display: none;
+                        overflow: hidden;
+                    }
+                    
+                    .section-first:hover .slide-body {
+                        display: block;
+                        animation: fade-bottom 0.5s ease-in;
+                        overflow: hidden;
+                    }
+                    
+                    .section-first:hover .m-heading {
+                        display: block;
+                        animation: fade-up 0.5s ease-in;
+                        overflow: hidden;
+                    }
+                    
+                    .section-first:hover .s-heading {
+                        display: block;
+                        animation: fade-up 0.5s ease-in;
+                        overflow: hidden;
+                    }
+                    
+                    .section-first:hover .slide-btn {
+                        display: block;
+                        animation: fade-up 0.5s ease-in;
+                        overflow: hidden;
+                    }
+                    
+                    .slide-btn {
+                        background-color: #95519e !important;
+                        border: 0px !important;
+                        border-radius: 0px!important;
+                        width: 250px;
+                        padding: 11px !important;
+                    }
+                    
+                    .b-btn {
+                        background-color: #95519e !important;
+                        border: 0px !important;
+                        border-radius: 0px!important;
+                        /* width: 250px; */
+                        padding: 11px !important;
+                    }
+                    
+                    .w-btn {
+                        border: 2px solid #fff !important;
+                        border-radius: 0px!important;
+                        padding: 11px !important;
+                        width: 300px;
+                        background-color: #78d9de00 !important;
+                    }
+                    
+                    .r-btn {
+                        font-size: 16px;
+                        font-weight: 400;
+                        fill: #96509F;
+                        color: #96509F;
+                        background-color: transparent;
+                        background-image: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+                        border-radius: 0px 0px 0px 0px;
+                        text-decoration: none;
+                        height: auto;
+                        width: 100%;
+                        padding: 10px;
+                    }
+                    
+                    .section-first {
+                        height: 600px;
+                        width: 410px !important;
+                        background-color: #c9eff2;
+                        overflow: hidden;
+                        margin: 5px;
+                    }
+                    
+                    .show-latam {
+                        height: 600px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-content: center;
+                        transition: all 1.5s ease 0s;
+                    }
+                    
+                    .section-first:hover {
+                        background-color: #78D9DE;
+                        cursor: pointer;
+                        background-image: url(https://www.suntecgroup.com/wp-content/uploads/2022/05/2-bg-new_.png);
+                        height: 600px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    
+                    @keyframes fade-bottom {
+                        0% {
+                            transform: translateY(100px);
+                            opacity: 1;
+                        }
+                        100% {
+                            transform: translateY(0px);
+                            opacity: 1;
+                        }
+                    }
+                    
+                    @keyframes fade-up {
+                        100% {
+                            transform: translateY(0px);
+                            opacity: 1;
+                        }
+                        0% {
+                            transform: translateY(-100px);
+                            opacity: 1;
+                        }
+                    }
+                    
+                    .partners {
+                        width: 200px !important;
+                    }
+                    
+                    .left-opp {
+                        width: 50% !important;
+                        height: 340px;
+                        padding-top: 77px;
+                        padding-left: 32px;
+                    }
+                    
+                    .m-head {
+                        font-weight: 300;
+                        margin-bottom: 40px;
+                    }
+                    
+                    .t-head {
+                        font-size: 33px;
+                    }
+                    
+                    .right-opp {
+                        position: absolute;
+                        right: 100px;
+                        margin-top: 50px;
+                    }
+                    
+                    .b-box {
+                        border-style: solid;
+                        border-color: #FFFFFF;
+                        box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 50%);
+                        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                        border-radius: 27px 27px 27px 27px;
+                        height: 400px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    
+                    .h {
+                        height: 46px;
+                    }
+                    
+                    .counts {
+                        width: 70% !important;
+                    }
+                    
+                    .line {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 400px;
+                    }
+                    
+                    .l-border {
+                        color: #95519e;
+                        border-top: 4px solid;
                         opacity: 1;
                     }
-                    100% {
-                        transform: translateY(0px);
-                        opacity: 1;
+                    
+                    svg#idea {
+                        height: 106px;
+                        margin-bottom: 26px;
                     }
-                }
-                
-                @keyframes fade-up {
-                    100% {
-                        transform: translateY(0px);
-                        opacity: 1;
+                    
+                    svg#handshake {
+                        height: 106px;
+                        margin-bottom: 26px;
                     }
-                    0% {
-                        transform: translateY(-100px);
-                        opacity: 1;
+                    
+                    svg#groups {
+                        height: 106px;
+                        margin-bottom: 26px;
                     }
-                }
-                
-                .partners {
-                    width: 200px !important;
-                }
-                
-                .left-opp {
-                    width: 50% !important;
-                    height: 340px;
-                    padding-top: 77px;
-                    padding-left: 32px;
-                }
-                
-                .m-head {
-                    font-weight: 300;
-                    margin-bottom: 40px;
-                }
-                
-                .t-head {
-                    font-size: 33px;
-                }
-                
-                .right-opp {
-                    position: absolute;
-                    right: 100px;
-                    margin-top: 50px;
-                }
-                
-                .b-box {
-                    border-style: solid;
-                    border-color: #FFFFFF;
-                    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 50%);
-                    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-                    border-radius: 27px 27px 27px 27px;
-                    height: 400px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                }
-                
-                .h {
-                    height: 46px;
-                }
-                
-                .counts {
-                    width: 70% !important;
-                }
-                
-                .line {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    height: 400px;
-                }
-                
-                .l-border {
-                    color: #95519e;
-                    border-top: 4px solid;
-                    opacity: 1;
-                }
-                
-                svg#idea {
-                    height: 106px;
-                    margin-bottom: 26px;
-                }
-                
-                svg#handshake {
-                    height: 106px;
-                    margin-bottom: 26px;
-                }
-                
-                svg#groups {
-                    height: 106px;
-                    margin-bottom: 26px;
-                }
-                
-                .i_hover {
-                    padding-left: 30px;
-                    padding-right: 30px;
-                }
-                
-                .bg-review {
-                    background-color: #ffff;
-                    height: 400px;
-                    border-radius: 28px;
-                    width: 87%;
-                    margin-left: 28px;
-                }
-                
-                .r_content {
-                    /* width: 100% !important; */
-                    background-image: url(/images/test-background.png);
-                }
-                
-                .t-bg {
-                    border-top-right-radius: 25px;
-                    border-top-left-radius: 27px;
-                    position: absolute;
-                    top: 172px;
-                    background: white;
-                    padding-left: 48px;
-                    padding-right: 48px;
-                    padding-top: 17px;
-                }
-                
-                .ts-bg {
-                    background: #f4f4f4;
-                    border-top-right-radius: 25px;
-                    border-top-left-radius: 27px;
-                    height: 200px;
-                    padding-left: 35px;
-                    padding-right: 35px;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-content: center;
-                }
-                
-                img.t_img {
-                    width: 150px !important;
-                }
-                
-                .solutions {
-                    width: 80% !important;
-                }
-                
-                .carousel-caption {
-                    position: absolute;
-                    right: 15%;
-                    bottom: 11.25rem !important;
-                    left: 10% !important;
-                    padding-top: 0rem;
-                    bottom: 7rem !important;
-                    /* padding-bottom: 0.1rem; */
-                    color: #fff;
-                    text-align: left !important;
-                }
-                
-                .system {
-                    background-color: #E9C7E0;
-                    height: 690px;
-                    padding: 12px;
-                }
-                
-                .system p {
-                    line-height: 1.9em;
-                    padding: 12px;
-                    text-align: start;
-                }
-                
-                .system-inner {
-                    background-color: #ffffff96;
-                    height: 665px;
-                    padding-top: 45px;
-                    padding-left: 21px;
-                    border-radius: 17px;
-                    padding-right: 21px;
-                }
-                
-                .partner {
-                    background-color: #F2F2F2;
-                    padding: 12px;
-                    height: 690px;
-                }
-                
-                .partner p {
-                    line-height: 1.9em;
-                    padding: 12px;
-                    text-align: start;
-                }
-                
-                .partner-inner {
-                    background-color: #ffffff96;
-                    height: 665px;
-                    padding-top: 45px;
-                    padding-left: 21px;
-                    border-radius: 17px;
-                    padding-right: 21px;
-                }
-                
-                .cloud {
-                    background-color: #78D9DE;
-                    padding: 12px;
-                    height: 690px;
-                }
-                
-                .cloud p {
-                    line-height: 1.9em;
-                    padding: 12px;
-                    text-align: start;
-                }
-                
-                .cloud-inner {
-                    background-color: #ffffff96;
-                    height: 665px;
-                    padding-top: 45px;
-                    padding-left: 21px;
-                    border-radius: 17px;
-                    padding-right: 21px;
-                }
-                
-                .black {
-                    color: black;
-                }
-                
-                .w {
-                    width: 50%
-                }
-                
-                .list-inline li a {
-                    line-height: 29px;
-                    text-decoration: none;
-                    list-style: none;
-                    color: white;
-                }
-                
-                .list-inline li a:hover {
-                    color: #95519e;
-                    cursor: pointer;
-                }
-                
-                .b-text {
-                    background-color: #95519e;
-                    color: #ffff;
-                    height: auto;
-                    text-align: start;
-                    padding: 41px;
-                    width: 550px;
-                }
-                
-                .b-banner {
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    height: 500px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    ;
-                }
-                
-                .breadcum {
-                    background: #F1F1F1;
-                    height: 70px;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-                
-                .card-icon-left {
-                    width: 100px !important;
-                    height: 100px !important;
-                }
-                
-                .c-height {
-                    height: 130px !important;
-                    border: 0px !important;
-                }
-                
-                .gra_color {
-                    background: rgb(80, 59, 157);
-                    background: linear-gradient(90deg, rgba(80, 59, 157, 1) 1%, rgba(247, 97, 24, 1) 100%);
-                    display: flex;
-                    align-content: center;
-                    flex-direction: column;
-                    /* flex-wrap: wrap; */
-                    justify-content: center;
-                }
-                
-                .c_shadow {
-                    /* height: 490px !important; */
-                    border: 0px !important;
-                    box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 28%);
-                    margin: 10px 10px 10px 10px;
-                    --e-column-margin-right: 10px;
-                    --e-column-margin-left: 10px;
-                    padding: 30px 30px 30px 30px;
-                }
-                
-                .c_body {
-                    padding: 12px 5px 12px 5px !important;
-                }
-                
-                .center {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                /*   card design template start here */
+                    
+                    .i_hover {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    
+                    .bg-review {
+                        background-color: #ffff;
+                        height: 400px;
+                        border-radius: 28px;
+                        width: 87%;
+                        margin-left: 28px;
+                    }
+                    
+                    .r_content {
+                        /* width: 100% !important; */
+                        background-image: url(/images/test-background.png);
+                    }
+                    
+                    .t-bg {
+                        border-top-right-radius: 25px;
+                        border-top-left-radius: 27px;
+                        position: absolute;
+                        top: 172px;
+                        background: white;
+                        padding-left: 48px;
+                        padding-right: 48px;
+                        padding-top: 17px;
+                    }
+                    
+                    .ts-bg {
+                        background: #f4f4f4;
+                        border-top-right-radius: 25px;
+                        border-top-left-radius: 27px;
+                        height: 200px;
+                        padding-left: 35px;
+                        padding-right: 35px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                    }
+                    
+                    img.t_img {
+                        width: 150px !important;
+                    }
+                    
+                    .solutions {
+                        width: 80% !important;
+                    }
+                    
+                    .carousel-caption {
+                        position: absolute;
+                        right: 15%;
+                        bottom: 11.25rem !important;
+                        left: 10% !important;
+                        padding-top: 0rem;
+                        bottom: 7rem !important;
+                        /* padding-bottom: 0.1rem; */
+                        color: #fff;
+                        text-align: left !important;
+                    }
+                    
+                    .system {
+                        background-color: #E9C7E0;
+                        height: 690px;
+                        padding: 12px;
+                    }
+                    
+                    .system p {
+                        line-height: 1.9em;
+                        padding: 12px;
+                        text-align: start;
+                    }
+                    
+                    .system-inner {
+                        background-color: #ffffff96;
+                        height: 665px;
+                        padding-top: 45px;
+                        padding-left: 21px;
+                        border-radius: 17px;
+                        padding-right: 21px;
+                    }
+                    
+                    .partner {
+                        background-color: #F2F2F2;
+                        padding: 12px;
+                        height: 690px;
+                    }
+                    
+                    .partner p {
+                        line-height: 1.9em;
+                        padding: 12px;
+                        text-align: start;
+                    }
+                    
+                    .partner-inner {
+                        background-color: #ffffff96;
+                        height: 665px;
+                        padding-top: 45px;
+                        padding-left: 21px;
+                        border-radius: 17px;
+                        padding-right: 21px;
+                    }
+                    
+                    .cloud {
+                        background-color: #78D9DE;
+                        padding: 12px;
+                        height: 690px;
+                    }
+                    
+                    .cloud p {
+                        line-height: 1.9em;
+                        padding: 12px;
+                        text-align: start;
+                    }
+                    
+                    .cloud-inner {
+                        background-color: #ffffff96;
+                        height: 665px;
+                        padding-top: 45px;
+                        padding-left: 21px;
+                        border-radius: 17px;
+                        padding-right: 21px;
+                    }
+                    
+                    .black {
+                        color: black;
+                    }
+                    
+                    .w {
+                        width: 50%
+                    }
+                    
+                    .list-inline li a {
+                        line-height: 29px;
+                        text-decoration: none;
+                        list-style: none;
+                        color: white;
+                    }
+                    
+                    .list-inline li a:hover {
+                        color: #95519e;
+                        cursor: pointer;
+                    }
+                    
+                    .b-text {
+                        background-color: #95519e;
+                        color: #ffff;
+                        height: auto;
+                        text-align: start;
+                        padding: 41px;
+                        width: 550px;
+                    }
+                    
+                    .b-banner {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        ;
+                    }
+                    
+                    .breadcum {
+                        background: #F1F1F1;
+                        height: 70px;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    
+                    .card-icon-left {
+                        width: 100px !important;
+                        height: 100px !important;
+                    }
+                    
+                    .c-height {
+                        height: 130px !important;
+                        border: 0px !important;
+                    }
+                    
+                    .gra_color {
+                        background: rgb(80, 59, 157);
+                        background: linear-gradient(90deg, rgba(80, 59, 157, 1) 1%, rgba(247, 97, 24, 1) 100%);
+                        display: flex;
+                        align-content: center;
+                        flex-direction: column;
+                        /* flex-wrap: wrap; */
+                        justify-content: center;
+                    }
+                    
+                    .c_shadow {
+                        /* height: 490px !important; */
+                        border: 0px !important;
+                        box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 28%);
+                        margin: 10px 10px 10px 10px;
+                        --e-column-margin-right: 10px;
+                        --e-column-margin-left: 10px;
+                        padding: 30px 30px 30px 30px;
+                    }
+                    
+                    .c_body {
+                        padding: 12px 5px 12px 5px !important;
+                    }
+                    
+                    .center {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .middle {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    
+                    .right {
+                        text-align: right;
+                    }
+                    
+                    .f-end {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                    }
+                    
+                    .years {
+                        color: #FF6309;
+                        font-family: "Open Sans", Sans-serif;
+                        font-size: 40px;
+                    }
+                    
+                    .years-i {
+                        font-size: 60px;
+                    }
+                    
+                    .company-bg {
+                        background-color: #C9C9C9;
+                    }
+                    
+                    .company-h {
+                        font-weight: 900;
+                        font-size: 35px;
+                    }
+                    
+                    .company-i {
+                        font-weight: 400;
+                        font-size: 25px;
+                        font-style: italic;
+                    }
+                    
+                    .company-l {
+                        border-left: 4px solid #FF6208;
+                    }
+                    
+                    .company-img {
+                        width: 30% !important;
+                    }
+                    /*   card design template start here */
