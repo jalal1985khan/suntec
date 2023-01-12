@@ -18,6 +18,7 @@ return (
 <Container fluid className="breadcum">
 <Breadcrumb >
       <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+      <Breadcrumb.Item href="/case-studies">Case Studies</Breadcrumb.Item>
       <Breadcrumb.Item href={post['slug']} active>
       {post['title']['rendered']}
       </Breadcrumb.Item>
