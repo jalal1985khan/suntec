@@ -10,6 +10,7 @@ function LinksExample() {
     const [movies, setMovies] = useState([]);
     const [page, setPage] = useState(9);
     const [loading, setLoading] = useState(false);
+    const [category, setCategory] = useState();
     const [error, setError] = useState({});
     const [next, setNext] = useState();
     const [total, setTotal] = useState();
@@ -19,7 +20,7 @@ function LinksExample() {
       setLoading(true);
       let url = "";
       const urlPage = `${page}`;
-      url = `${configData.SERVER_URL}case-studies?_embed&status=publish&per_page=${urlPage}`;
+      url = `${configData.SERVER_URL}ebooks?_embed&status=publish&per_page=${urlPage}`;
       try {
         const response = await fetch(url);
         const data = await response.json();
@@ -34,7 +35,7 @@ function LinksExample() {
     const fetchNos = async () => {
       setLoading(true);
       let cat = "";
-      cat = `${configData.SERVER_URL}categories/248 `;
+      cat = `${configData.SERVER_URL}categories/238 `;
   
       try {
         const response = await fetch(cat);
@@ -71,7 +72,7 @@ function LinksExample() {
         return oldPage + 3;
       })
     };
-
+    
   return (
 <>
 <Header/>
@@ -79,7 +80,7 @@ function LinksExample() {
 <Breadcrumb >
       <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
       <Breadcrumb.Item href="/company" active>
-      Case Studies
+      Ebooks
       </Breadcrumb.Item>
     </Breadcrumb>
 </Container>
@@ -90,7 +91,7 @@ function LinksExample() {
 <Row>
 <Col sm={4}>
 <div className="r-text">
-<h1 className="fs-1">Case Studies</h1>
+<h1 className="fs-1">Ebooks</h1>
 <div className="wbg-gr p-2">
 <p className="fs-5">Discover how our clients across verticals benefited with SunTec</p>
 </div>
@@ -101,15 +102,16 @@ function LinksExample() {
 </Row>
 </Container>
 <Container className="mt-5 ">
-<h2 className="txt-main">Case Studies</h2>
+<h2 className="txt-main">Ebooks</h2>
 
 <Row>
 {
 
 movies.map((post, index) => {
-  //console.log(post);
-  return (
+//   console.log(post['categories']['0']);
 
+  return (
+    
     <Col sm={4} className="p-3" key={post.id}>
       <Card className="p-posts" >
         <Image
@@ -128,7 +130,7 @@ movies.map((post, index) => {
             </Moment>
             </Col>
             <Col className="d-flex justify-content-end">
-            <Link key={index} href={`/case-studies/${post['slug']}`} className="float-right">
+            <Link key={index} href={`/ebooks/${post['slug']}`} className="float-right">
             Read more
           </Link>
             </Col>
