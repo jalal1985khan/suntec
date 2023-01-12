@@ -700,4 +700,15 @@
                                 border-top-right-radius: 12px !important;
                                 border: 0px !important;
                             }
+                            
+                            .social {
+                                height: 80px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                            }
+                            
+                            svg.icon-back circle {
+                                fill: white !important;
+                            }
                             /*   card design template start here */

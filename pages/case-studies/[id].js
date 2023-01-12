@@ -1,10 +1,10 @@
-import {Container,Row, Col,Image,Breadcrumb,Card, Button, Offcanvas} from 'react-bootstrap';
+import {Container,Row, Col,Breadcrumb} from 'react-bootstrap';
 import configData from "../../config.json";
-import Link from 'next/link';
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
+import {WhatsappShareButton, EmailShareButton ,TwitterShareButton ,LinkedinShareButton ,WhatsappIcon ,EmailIcon,TwitterIcon,LinkedinIcon} from "react-share";
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Share from '../../components/Share';
+// import GravityForm from 'react-native-gravityform';
 
 const post = ({data}) => {
   console.log(data);
@@ -14,10 +14,10 @@ const post = ({data}) => {
 {
 data.map((post)=>{
 return (
-<>
+<div key={post.id}>
 <Container fluid className="breadcum">
 <Breadcrumb >
-      <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+      <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
       <Breadcrumb.Item href={post['slug']} active>
       {post['title']['rendered']}
       </Breadcrumb.Item>
@@ -36,7 +36,67 @@ return (
 </Container>
 <Container fluid key={post.id} className="success_post" style={{ backgroundImage: `url(${post['_embedded']['wp:featuredmedia'][0]['source_url']})`}}>
 </Container>
-<Share/>
+<Container className="wbg-gr social" fluid>
+<Row>
+<Col className="d-flex flex-column justify-content-center align-items-end text-white fs-5">
+Liked the post? Share this on your social media</Col>
+<Col>
+<TwitterShareButton className="p-2"
+url={post['link']}
+title={post['title']['rendered']}
+caption={post['title']['rendered']}
+>
+<TwitterIcon 
+size={55} 
+round={true}
+iconFillColor='black'
+className="icon-back"
+
+/>
+</TwitterShareButton>
+
+<LinkedinShareButton className="p-2"
+url={post['link']}
+title={post['title']['rendered']}
+summary={post['excerpt']['rendered']}
+source={post['slug']}
+>
+<LinkedinIcon 
+size={55} 
+round={true} 
+iconFillColor='black'
+className="icon-back"
+/>
+</LinkedinShareButton>
+<WhatsappShareButton className="p-2"
+url={post['link']}
+title={post['title']['rendered']}
+>
+<WhatsappIcon 
+size={55} 
+round={true} 
+iconFillColor='black'
+className="icon-back"
+/>
+</WhatsappShareButton>
+<EmailShareButton
+subject={post['title']['rendered']}
+body=""
+className="p-2"
+>
+<EmailIcon 
+size={55} 
+round={true} 
+iconFillColor='black'
+className="icon-back"
+/>
+</EmailShareButton>
+
+
+
+</Col>  
+</Row>  
+</Container>
 <Container className="mt-5">
 <Row>
 <Col sm={7}>
@@ -57,7 +117,7 @@ return (
 <Footer/>
 
 
-</>
+</div>
 
 
 
