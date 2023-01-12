@@ -58,7 +58,7 @@ function LinksExample({ name, ...props }) {
 <Col>
 <div className="b-text">
 <h1>About</h1>
-<p>We are the world’s No. 1 pricing and billing company that creates value for enterprises through its Cloud-based products. Our award-winning products and solutions enable organizations like yours to adopt a customer first strategy, exponentially increase revenue and customer base, and deliver exceptional customer experience.</p>
+<p>We are the world&apos;s No. 1 pricing and billing company that creates value for enterprises through its Cloud-based products. Our award-winning products and solutions enable organizations like yours to adopt a customer first strategy, exponentially increase revenue and customer base, and deliver exceptional customer experience.</p>
 </div>
 </Col> 
 <Col>

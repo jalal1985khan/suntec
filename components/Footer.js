@@ -53,7 +53,7 @@ function LinksExample() {
 <ul className="text-white list-inline">
 <li>Articles</li>
 <li>Blogs</li>
-<li>Case Studies</li>
+<li><Link href="/case-studies">Case Studies</Link></li>
 <li>Datasheets</li>
 <li>eBook</li>
 <li>Podcasts</li>
@@ -73,9 +73,9 @@ function LinksExample() {
 <li>Events</li>
 <li>Careers</li>
 <li>Covid Response</li>
-<li>CSR</li>
-<li>HR Initiative</li>
-<li>Newsroom</li>
+<li><Link href="/corporate-social-responsibility">CSR</Link></li>
+<li><Link href="/hr-initiative">HR Initiative</Link></li>
+<li><Link href="/news-room">Newsroom</Link></li>
 <li>Partners</li>
 <li>Notices</li>
 <li>Sitemap</li>
