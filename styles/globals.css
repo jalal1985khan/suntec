@@ -509,6 +509,17 @@
                                 /* width: 550px; */
                             }
                             
+                            .c-text {
+                                background-color: #ffffffcb;
+                                color: #000;
+                                height: auto;
+                                text-align: start;
+                                padding-top: 41px;
+                                padding-bottom: 41px;
+                                padding-left: 41px;
+                                /* width: 550px; */
+                            }
+                            
                             .ribbon:before {
                                 content: '';
                                 position: absolute;
@@ -671,5 +682,22 @@
                             
                             .csr-img {
                                 width: 100%;
+                            }
+                            
+                            .posts {
+                                border-style: solid;
+                                border-width: 2px 2px 2px 2px;
+                                border-color: #903EA0;
+                                transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                                margin-top: -14px;
+                                margin-bottom: 0px;
+                                border-radius: 17px;
+                                background: #fff;
+                            }
+                            
+                            .p-posts {
+                                border-top-left-radius: 12px !important;
+                                border-top-right-radius: 12px !important;
+                                border: 0px !important;
                             }
                             /*   card design template start here */

@@ -1,12 +1,13 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button, Offcanvas} from 'react-bootstrap';
 import Link from 'next/link';
 import React, { useEffect, useState } from "react";
+import Moment from 'react-moment';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 function LinksExample() {
     const [movies, setMovies] = useState([]);
-    const [page, setPage] = useState(10);
+    const [page, setPage] = useState(12);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState({});
     const [next, setNext] = useState();
@@ -17,9 +18,6 @@ function LinksExample() {
       setLoading(true);
       let url = "";
       const urlPage = `${page}`;
-      //console.log(urlPage)
-      //url = query ? `${API_ENDPOINT}${urlPage}${urlQuery}` : "";
-      //url = `${configData.SERVER_URL}posts?_embed&categories[]=12&status[]=publish&per_page=${urlPage}`;
       url = `https://elementor.ivistasolutions.biz/wp-json/wp/v2/case-studies?_embed&status=publish&per_page=${urlPage}`;
       try {
         const response = await fetch(url);
@@ -111,20 +109,30 @@ movies.map((post, index) => {
   return (
 
     <Col sm={4} className="p-3" key={post.id}>
-      <Card className="story_post" >
+      <Card className="p-posts" >
         <Image
           src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
           alt={post['title']['rendered']}
           width="100%"
+          className="p-posts"
         />
-        <Card.Body>
+        <Card.Body className="posts">
           
-          <Card.Title className="fs-3 bogle-medium mb-4" style={{ height: 58 }}>{post['title']['rendered']}</Card.Title>
-          
-          
-          <Link key={index} href={`/case-studies/${post['slug']}`}>
-            <Button variant="primary" className="authors_btn fs-5">Know more</Button>
+          <Card.Title className="fs-5 mb-4" style={{ height: 5 +'em' }} dangerouslySetInnerHTML={{ __html:post['title']['rendered']}}/>
+          <Row>
+            <Col>
+            <Moment format="D MMM YYYY" withTitle>
+            {post.date}
+            </Moment>
+            </Col>
+            <Col className="d-flex justify-content-end">
+            <Link key={index} href={`/case-studies/${post['slug']}`} className="float-right">
+            Read more
           </Link>
+            </Col>
+          </Row>
+        
+          
         </Card.Body>
       </Card>
 
