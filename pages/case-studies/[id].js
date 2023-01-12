@@ -23,7 +23,7 @@ return (
       </Breadcrumb.Item>
     </Breadcrumb>
 </Container>
-<Container className="p-3 b-banner" fluid style={{ backgroundImage: `url(${post['_embedded']['wp:featuredmedia'][0]['source_url']})`}}>
+<Container className="p-3 b-banner" fluid style={{ backgroundImage: `url(${post['acf']['desktop_image']})`}}>
 <Row>
 <Col sm={6}>
 <div className="c-text">
