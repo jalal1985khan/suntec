@@ -27,6 +27,7 @@ function LinksExample() {
         //console.log(data);
         setMovies(data);
         setLoading(false);
+        setEnd(false);
       } catch (error) {
         console.log(error);
       }
@@ -35,13 +36,14 @@ function LinksExample() {
     const fetchNos = async () => {
       setLoading(true);
       let cat = "";
-      cat = `${configData.SERVER_URL}categories/238 `;
+      cat = `${configData.SERVER_URL}categories/238`;
   
       try {
         const response = await fetch(cat);
         const cats = await response.json();
         //console.log(cats.count);
         setNext(cats.count);
+        setTotal(cats.count);
         setLoading(false);
         setEnd(true);
   
@@ -85,15 +87,16 @@ function LinksExample() {
     </Breadcrumb>
 </Container>
 <Container className="p-3 b-banner" fluid style={{ 
-      backgroundImage: `url("/images/Newsroom.jpg")` 
+      backgroundImage: `url("/images/ebooks_banner.jpeg")` 
     }}>
 
 <Row>
 <Col sm={4}>
 <div className="r-text">
+<div class="ribbon-1"></div>
 <h1 className="fs-1">Ebooks</h1>
-<div className="wbg-gr p-2">
-<p className="fs-5">Discover how our clients across verticals benefited with SunTec</p>
+<div className="wbg-gr p-2 w-text">
+<p className="fs-5">Get detailed industry insights from SunTec</p>
 </div>
 </div>
 </Col> 
@@ -121,7 +124,6 @@ movies.map((post, index) => {
           className="p-posts"
         />
         <Card.Body className="posts">
-          
           <Card.Title className="fs-5 mb-4" style={{ height: 5 +'em' }} dangerouslySetInnerHTML={{ __html:post['title']['rendered']}}/>
           <Row>
             <Col>
@@ -134,9 +136,7 @@ movies.map((post, index) => {
             Read more
           </Link>
             </Col>
-          </Row>
-        
-          
+          </Row>  
         </Card.Body>
       </Card>
 
@@ -151,7 +151,7 @@ movies.map((post, index) => {
 
 </Container>
 <section className="section text-center mb-3">
-        {loading && <h2 className="loading">Loading Case Studies...</h2>}
+        {loading && <h2 className="loading">Loading Ebooks...</h2>}
         <div className="loadmodediv">
           {end &&
             <Button variant="primary" className="b-btn fs-5" onClick={loadMore}>

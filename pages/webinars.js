@@ -10,71 +10,72 @@ function LinksExample() {
     const [movies, setMovies] = useState([]);
     const [page, setPage] = useState(9);
     const [loading, setLoading] = useState(false);
-    const [category, setCategory] = useState();
     const [error, setError] = useState({});
     const [next, setNext] = useState();
     const [total, setTotal] = useState();
-    const [end, setEnd] = useState(false);
+    const [end, setEnd] = useState(true);
   
     const fetchMovies = async () => {
       setLoading(true);
+      
       let url = "";
       const urlPage = `${page}`;
-      url = `${configData.SERVER_URL}reports?_embed&status=publish&per_page=${urlPage}`;
+      url = `${configData.SERVER_URL}webinars?_embed&status=publish&per_page=${urlPage}`;
       try {
         const response = await fetch(url);
         const data = await response.json();
-        // console.log(data);
+        //console.log(data);
         setMovies(data);
         setLoading(false);
-        setEnd(false);
       } catch (error) {
         console.log(error);
       }
     };
   
     const fetchNos = async () => {
-      setLoading(true);
+      //setLoading(true);
       let cat = "";
-      cat = `${configData.SERVER_URL}categories/239 `;
-  
+      cat = `${configData.SERVER_URL}categories/252`;
       try {
         const response = await fetch(cat);
         const cats = await response.json();
-        console.log(cats.count);
+        //console.log(cats.count);
         setNext(cats.count);
         setTotal(cats.count);
         setLoading(false);
-        setEnd(true);
-  
       } catch (error) {
         console.log(error);
       }
     };
-  
-  
-  
-  
     useEffect(() => {
       fetchMovies();
       fetchNos();
-    }, [page], [next]);
+    }, [page], [total]);
   
   
     const loadMore = () => {
-      setTotal(next)
-      //console.log(total)
+      setTotal(total)
+      console.log(page)
+      console.log(total)
       const main = next;
+     // setEnd(false);
   
-      if (total == page) {
+      if (total <= page) {
         setEnd(false);
+        //console.log('page is greater than total')
+      }
+      else{
+        setEnd(true); 
+        //console.log('total is greater than page')
       }
   
       setPage((oldPage) => {
-        return oldPage + 3;
+        return oldPage + 9;
       })
+      
+
     };
-    
+
   return (
 <>
 <Header/>
@@ -82,7 +83,7 @@ function LinksExample() {
 <Breadcrumb >
       <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
       <Breadcrumb.Item href="/company" active>
-      Reports
+      Webinars
       </Breadcrumb.Item>
     </Breadcrumb>
 </Container>
@@ -94,9 +95,9 @@ function LinksExample() {
 <Col sm={4}>
 <div className="r-text">
 <div class="ribbon-1"></div>
-<h1 className="fs-1">Reports</h1>
+<h1 className="fs-1">Webinars</h1>
 <div className="wbg-gr p-2 w-text">
-<p className="fs-5">Get insights on topics that are transforming enterprises.</p>
+<p className="fs-5">Watch the most valuable insights from industry pioneers and optimize your business</p>
 </div>
 </div>
 </Col> 
@@ -105,16 +106,15 @@ function LinksExample() {
 </Row>
 </Container>
 <Container className="mt-5 ">
-<h2 className="txt-main">Reports</h2>
+<h2 className="txt-main">Webinars</h2>
 
 <Row>
 {
 
 movies.map((post, index) => {
-//   console.log(post['categories']['0']);
-
+  //console.log(post);
   return (
-    
+
     <Col sm={4} className="p-3" key={post.id}>
       <Card className="p-posts" >
         <Image
@@ -133,7 +133,7 @@ movies.map((post, index) => {
             </Moment>
             </Col>
             <Col className="d-flex justify-content-end">
-            <Link key={index} href={`/reports/${post['slug']}`} className="float-right">
+            <Link key={index} href={`/webinars/${post['slug']}`} className="float-right">
             Read more
           </Link>
             </Col>
@@ -154,7 +154,7 @@ movies.map((post, index) => {
 
 </Container>
 <section className="section text-center mb-3">
-        {loading && <h2 className="loading">Loading Reports...</h2>}
+        {loading && <h2 className="loading">Loading Webinars...</h2>}
         <div className="loadmodediv">
           {end &&
             <Button variant="primary" className="b-btn fs-5" onClick={loadMore}>

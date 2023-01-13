@@ -51,17 +51,17 @@ function LinksExample() {
 <h2 className="text-white fs-5">Insights</h2>
 <hr className="border"/>
 <ul className="text-white list-inline">
-<li>Articles</li>
-<li>Blogs</li>
+<li><Link href="/articles">Articles</Link></li>
+<li><Link href="/blogs">Blogs</Link></li>
 <li><Link href="/case-studies">Case Studies</Link></li>
 <li><Link href="/datasheets">Datasheets</Link></li>
 <li><Link href="/ebooks">eBooks</Link></li>
 <li><Link href="/podcasts">Podcasts</Link></li>
 <li><Link href="/point-of-view">Point of View</Link></li>
 <li><Link href="/reports">Reports</Link></li>
-<li>Videos</li>
-<li>Whitepapers</li>
-<li>Webinars</li>
+<li><Link href="/videos">Videos</Link></li>
+<li><Link href="/whitepapers">Whitepapers</Link></li>
+<li><Link href="/webinars">Webinars</Link></li>
 </ul>
 </Col>
 <Col sm={2}>
@@ -79,7 +79,7 @@ function LinksExample() {
 <li>Partners</li>
 <li>Notices</li>
 <li>Sitemap</li>
-<li>Privacy Policy</li>
+<li><Link href="/privacypolicy">Privacy Policy</Link></li>
 
 </ul>
 </Col>

@@ -24,9 +24,10 @@ function LinksExample() {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data);
+       // console.log(data);
         setMovies(data);
         setLoading(false);
+        setEnd(false);
       } catch (error) {
         console.log(error);
       }
@@ -35,7 +36,7 @@ function LinksExample() {
     const fetchNos = async () => {
       setLoading(true);
       let cat = "";
-      cat = `${configData.SERVER_URL}categories/238 `;
+      cat = `${configData.SERVER_URL}categories/245`;
   
       try {
         const response = await fetch(cat);
@@ -44,7 +45,6 @@ function LinksExample() {
         setNext(cats.count);
         setLoading(false);
         setEnd(true);
-  
       } catch (error) {
         console.log(error);
       }
@@ -91,9 +91,12 @@ function LinksExample() {
 <Row>
 <Col sm={4}>
 <div className="r-text">
-<h1 className="fs-1">Podcasts</h1>
-<div className="wbg-gr p-2">
-<p className="fs-5">Discover how our clients across verticals benefited with SunTec</p>
+<div class="ribbon-1"></div>
+<h1 className="fs-1">Point Of View</h1>
+<div className="wbg-gr p-2 w-text">
+<p className="fs-5">Here&apos;s our take on the industry&apos;s pivotal topics!
+
+</p>
 </div>
 </div>
 </Col> 
@@ -151,7 +154,7 @@ movies.map((post, index) => {
 
 </Container>
 <section className="section text-center mb-3">
-        {loading && <h2 className="loading">Loading Podcats...</h2>}
+        {loading && <h2 className="loading">Loading POV...</h2>}
         <div className="loadmodediv">
           {end &&
             <Button variant="primary" className="b-btn fs-5" onClick={loadMore}>

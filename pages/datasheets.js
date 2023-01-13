@@ -65,15 +65,16 @@ function LinksExample() {
     </Breadcrumb>
 </Container>
 <Container className="p-3 b-banner" fluid style={{ 
-      backgroundImage: `url("/images/Newsroom.jpg")` 
+      backgroundImage: `url("/images/datasheets_banner.jpeg")` 
     }}>
 
 <Row>
 <Col sm={4}>
 <div className="r-text">
-<h1 className="fs-1">Case Studies</h1>
-<div className="wbg-gr p-2">
-<p className="fs-5">Discover how our clients across verticals benefited with SunTec</p>
+<div class="ribbon-1"></div>
+<h1 className="fs-1">Data Sheets</h1>
+<div className="wbg-gr p-2 w-text">
+<p className="fs-5">We have a lot to say, unravel our product offerings from below!</p>
 </div>
 </div>
 </Col> 

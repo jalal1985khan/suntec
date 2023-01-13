@@ -8,9 +8,8 @@ import Footer from '../components/Footer';
 
 function LinksExample() {
     const [movies, setMovies] = useState([]);
-    const [page, setPage] = useState(9);
+    const [page, setPage] = useState(8);
     const [loading, setLoading] = useState(false);
-    const [category, setCategory] = useState();
     const [error, setError] = useState({});
     const [next, setNext] = useState();
     const [total, setTotal] = useState();
@@ -20,11 +19,11 @@ function LinksExample() {
       setLoading(true);
       let url = "";
       const urlPage = `${page}`;
-      url = `${configData.SERVER_URL}reports?_embed&status=publish&per_page=${urlPage}`;
+      url = `${configData.SERVER_URL}ytvideos?_embed&status=publish&per_page=${urlPage}`;
       try {
         const response = await fetch(url);
         const data = await response.json();
-        // console.log(data);
+        //console.log(data);
         setMovies(data);
         setLoading(false);
         setEnd(false);
@@ -36,12 +35,11 @@ function LinksExample() {
     const fetchNos = async () => {
       setLoading(true);
       let cat = "";
-      cat = `${configData.SERVER_URL}categories/239 `;
-  
+      cat = `${configData.SERVER_URL}categories/311`;
       try {
         const response = await fetch(cat);
         const cats = await response.json();
-        console.log(cats.count);
+        //console.log(cats);
         setNext(cats.count);
         setTotal(cats.count);
         setLoading(false);
@@ -63,18 +61,18 @@ function LinksExample() {
   
     const loadMore = () => {
       setTotal(next)
-      //console.log(total)
+      console.log(total)
       const main = next;
   
       if (total == page) {
-        setEnd(false);
+        setEnd(true);
       }
   
       setPage((oldPage) => {
-        return oldPage + 3;
+        return oldPage + 2;
       })
     };
-    
+
   return (
 <>
 <Header/>
@@ -82,7 +80,7 @@ function LinksExample() {
 <Breadcrumb >
       <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
       <Breadcrumb.Item href="/company" active>
-      Reports
+      Videos
       </Breadcrumb.Item>
     </Breadcrumb>
 </Container>
@@ -94,9 +92,9 @@ function LinksExample() {
 <Col sm={4}>
 <div className="r-text">
 <div class="ribbon-1"></div>
-<h1 className="fs-1">Reports</h1>
+<h1 className="fs-1">Videos</h1>
 <div className="wbg-gr p-2 w-text">
-<p className="fs-5">Get insights on topics that are transforming enterprises.</p>
+<p className="fs-5">Discover how our clients across verticals benefited with SunTec</p>
 </div>
 </div>
 </Col> 
@@ -105,41 +103,43 @@ function LinksExample() {
 </Row>
 </Container>
 <Container className="mt-5 ">
-<h2 className="txt-main">Reports</h2>
+<h2 className="txt-main">Videos</h2>
 
 <Row>
 {
 
 movies.map((post, index) => {
-//   console.log(post['categories']['0']);
-
+    //console.log(post);
   return (
-    
-    <Col sm={4} className="p-3" key={post.id}>
-      <Card className="p-posts" >
-        <Image
-          src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
+
+    <Col sm={6} className="p-3" key={post.id}>
+
+{
+post['acf']['youtube_link'] === ''? 
+
+<Image
+          src={post['acf']['youtube_thumbs']['url']}
           alt={post['title']['rendered']}
           width="100%"
           className="p-posts"
         />
-        <Card.Body className="posts">
-          
-          <Card.Title className="fs-5 mb-4" style={{ height: 5 +'em' }} dangerouslySetInnerHTML={{ __html:post['title']['rendered']}}/>
-          <Row>
-            <Col>
-            <Moment format="D MMM YYYY" withTitle>
-            {post.date}
-            </Moment>
-            </Col>
-            <Col className="d-flex justify-content-end">
-            <Link key={index} href={`/reports/${post['slug']}`} className="float-right">
-            Read more
-          </Link>
-            </Col>
-          </Row>
-        
-          
+
+: 
+<iframe
+      width="100%"
+      height="350"
+      src={post['acf']['youtube_link']}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      title="Embedded youtube"
+    />
+
+}
+
+      <Card className="p-posts" >
+        <Card.Body className="posts" style={{ height: 27 +'em' }}>
+          <Card.Title className="fs-4 mb-4 font-weight-bold" style={{ height: 2 +'em' }} dangerouslySetInnerHTML={{ __html:post['title']['rendered']}}/>
+          <div className="fs-5" dangerouslySetInnerHTML={{__html:post['acf']['description']}}/>        
         </Card.Body>
       </Card>
 
@@ -154,7 +154,7 @@ movies.map((post, index) => {
 
 </Container>
 <section className="section text-center mb-3">
-        {loading && <h2 className="loading">Loading Reports...</h2>}
+        {loading && <h2 className="loading">Loading Videos...</h2>}
         <div className="loadmodediv">
           {end &&
             <Button variant="primary" className="b-btn fs-5" onClick={loadMore}>

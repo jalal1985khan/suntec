@@ -499,14 +499,18 @@
                             }
                             
                             .r-text {
-                                background-color: #95519e;
+                                background-color: #793781;
                                 color: #ffff;
                                 height: auto;
                                 text-align: start;
                                 padding-top: 41px;
                                 padding-bottom: 41px;
                                 padding-left: 41px;
-                                /* width: 550px; */
+                                width: 450px;
+                            }
+                            
+                            .w-text {
+                                width: 469px;
                             }
                             
                             .c-text {
@@ -710,5 +714,29 @@
                             
                             svg.icon-back circle {
                                 fill: white !important;
+                            }
+                            
+                            [class^=ribbon-] {
+                                position: relative;
+                                margin-bottom: 0px;
+                            }
+                            
+                            [class^=ribbon-]:before,
+                            [class^=ribbon-]:after {
+                                content: "";
+                                position: absolute;
+                            }
+                            
+                            .ribbon-1 {
+                                background: #ee583a;
+                                top: 0px;
+                            }
+                            
+                            .ribbon-1:before {
+                                height: 0;
+                                width: 0;
+                                border-bottom: 56px solid #008A87;
+                                border-right: 60px solid transparent;
+                                right: -60px;
                             }
                             /*   card design template start here */

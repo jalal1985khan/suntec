@@ -91,8 +91,9 @@ function LinksExample() {
 <Row>
 <Col sm={4}>
 <div className="r-text">
+<div class="ribbon-1"></div>
 <h1 className="fs-1">Podcasts</h1>
-<div className="wbg-gr p-2">
+<div className="wbg-gr p-2 w-text">
 <p className="fs-5">Discover how our clients across verticals benefited with SunTec</p>
 </div>
 </div>

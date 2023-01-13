@@ -13,10 +13,11 @@ function LinksExample() {
     const [error, setError] = useState({});
     const [next, setNext] = useState();
     const [total, setTotal] = useState();
-    const [end, setEnd] = useState(false);
+    const [end, setEnd] = useState(true);
   
     const fetchMovies = async () => {
       setLoading(true);
+      
       let url = "";
       const urlPage = `${page}`;
       url = `${configData.SERVER_URL}case-studies?_embed&status=publish&per_page=${urlPage}`;
@@ -32,44 +33,47 @@ function LinksExample() {
     };
   
     const fetchNos = async () => {
-      setLoading(true);
+      //setLoading(true);
       let cat = "";
       cat = `${configData.SERVER_URL}categories/248 `;
-  
       try {
         const response = await fetch(cat);
         const cats = await response.json();
         //console.log(cats.count);
         setNext(cats.count);
+        setTotal(cats.count);
         setLoading(false);
-        setEnd(true);
-  
       } catch (error) {
         console.log(error);
       }
     };
-  
-  
-  
-  
     useEffect(() => {
       fetchMovies();
       fetchNos();
-    }, [page], [next]);
+    }, [page], [total]);
   
   
     const loadMore = () => {
-      setTotal(next)
-      //console.log(total)
+      setTotal(total)
+      console.log(page)
+      console.log(total)
       const main = next;
+     // setEnd(false);
   
-      if (total == page) {
+      if (total <= page) {
         setEnd(false);
+        //console.log('page is greater than total')
+      }
+      else{
+        setEnd(true); 
+        //console.log('total is greater than page')
       }
   
       setPage((oldPage) => {
-        return oldPage + 3;
+        return oldPage + 9;
       })
+      
+
     };
 
   return (
@@ -90,8 +94,9 @@ function LinksExample() {
 <Row>
 <Col sm={4}>
 <div className="r-text">
+<div class="ribbon-1"></div>
 <h1 className="fs-1">Case Studies</h1>
-<div className="wbg-gr p-2">
+<div className="wbg-gr p-2 w-text">
 <p className="fs-5">Discover how our clients across verticals benefited with SunTec</p>
 </div>
 </div>
