@@ -55,10 +55,10 @@ function LinksExample() {
 <li>Blogs</li>
 <li><Link href="/case-studies">Case Studies</Link></li>
 <li><Link href="/datasheets">Datasheets</Link></li>
-<li><Link href="/ebooks">eBook</Link></li>
-<li>Podcasts</li>
-<li>Point of View</li>
-<li>Reports</li>
+<li><Link href="/ebooks">eBooks</Link></li>
+<li><Link href="/podcasts">Podcasts</Link></li>
+<li><Link href="/point-of-view">Point of View</Link></li>
+<li><Link href="/reports">Reports</Link></li>
 <li>Videos</li>
 <li>Whitepapers</li>
 <li>Webinars</li>

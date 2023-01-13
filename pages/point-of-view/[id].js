@@ -1,7 +1,6 @@
 import {Container,Row, Col,Breadcrumb} from 'react-bootstrap';
 import configData from "../../config.json";
 // import React, { useEffect, useState } from "react";
-import Link from 'next/link';
 import {WhatsappShareButton, EmailShareButton ,TwitterShareButton ,LinkedinShareButton ,WhatsappIcon ,EmailIcon,TwitterIcon,LinkedinIcon} from "react-share";
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -19,7 +18,7 @@ return (
 <Container fluid className="breadcum">
 <Breadcrumb >
       <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-      <Link href="/case-studies" className="breadcrumb-item active">Case Studies</Link>
+      <Breadcrumb.Item href="/ebooks">Ebooks</Breadcrumb.Item>
       <Breadcrumb.Item href={post['slug']} active>
       {post['title']['rendered']}
       </Breadcrumb.Item>
@@ -145,7 +144,7 @@ export default post
 
 export async function getServerSideProps(context){
     const {id} = context.params;
-    const res = await fetch(`${configData.SERVER_URL}case-studies?_embed&slug=${id}`);
+    const res = await fetch(`${configData.SERVER_URL}point-of-view?_embed&slug=${id}`);
     const data = await res.json();
     return {props:{data}}
     
