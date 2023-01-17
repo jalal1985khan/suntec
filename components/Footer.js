@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function LinksExample() {
   return (
-
+<>
 <Container className="wbg-black p-3 mt-4" fluid>
 <Row>
 <Col sm={3}>
@@ -83,12 +83,41 @@ function LinksExample() {
 </ul>
 </Col>
 </Row>
-<Container>
+<Row>
+<Col sm={3}>
+<h2 className="text-white fs-5">Contact Info</h2>
+<hr className="border"/>
+<p className="text-white">info@suntecgroup.com</p>
+</Col>
+<Col sm={2}></Col>
+<Col sm={3}>
+<h2 className="text-white fs-5">Platforms</h2>
+<hr className="border"/>
+<ul className="text-white list-inline">
+<li><Link href="/financial-services">Xelerate</Link></li>
+<li><Link href="/telecom">Cloud</Link></li>
+<li><Link href="/travel">Saas</Link></li>
+</ul>
+</Col>
+<Col></Col>
+<Col></Col>
+</Row>
+</Container>
+<Container className="wbg-dark text-white middle " fluid style={{height:5 +'em'}}>
+<Row>
+<Col className="center fs-5 fw-bold d-flex justify-content-end">Follow us</Col>  
+<Col>
+<img src="/images/f_icon_link.svg"/>
+<img src="/images/f_icon_twitter.svg"/>
+<img src="/images/f_icon_you.svg"/>
+</Col>  
+</Row>
+</Container>
+<Container className="wbg-black p-3" fluid>
 <p className="text-white">All Rights Reserved. © 2023 SunTec Business Solutions.</p>
 <p className="text-white">SunTec® and Xelerate® are registered trademarks of SunTec Business Solutions.</p>
 </Container>
-</Container>
-
+</>
   );
 }
 
