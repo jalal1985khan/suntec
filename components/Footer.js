@@ -5,6 +5,7 @@ import Link from 'next/link';
 function LinksExample() {
   return (
 <>
+<Link href="/" className="demo">Request a Demo</Link>
 <Container className="wbg-black p-3 mt-4" fluid>
 <Row>
 <Col sm={3}>
