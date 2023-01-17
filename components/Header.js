@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Link from "next/link";
 
 function NavScrollExample() {
   return (
@@ -13,7 +14,7 @@ function NavScrollExample() {
 <div className="wbg-menu">
    <div className="container">
       <nav className="navbar navbar-expand-lg navbar-dark p-0">
-         <img src="/images/suntec-logo.png"/>
+         <Link href="/"><img src="/images/suntec-logo.png"/></Link>
          
          <button className="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" 
             aria-expanded="false" aria-label="Toggle navigation">
