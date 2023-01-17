@@ -18,6 +18,39 @@
                                 background-color: #8CDEE2;
                             }
                             
+                            .wbg-menu {
+                                background-color: #FFF;
+                                height: 80px;
+                                display: flex;
+                                /* align-content: center; */
+                                align-items: center;
+                                font-size: 18px;
+                                border-bottom: 1px solid #cccccc;
+                            }
+                            
+                            .navbar {
+                                --bs-navbar-nav-link-padding-x: 1.0rem !important;
+                                --bs-nav-link-color: #000 !important;
+                            }
+                            
+                            .nav-link {
+                                color: black !important;
+                            }
+                            
+                            .nav-link:focus,
+                            .nav-link:hover {
+                                color: #95519e !important;
+                            }
+                            
+                            .nav-ul {
+                                text-decoration: none !important;
+                                list-style: none;
+                            }
+                            
+                            ul.nav-ul {
+                                line-height: 18px;
+                            }
+                            
                             .wbg-gr {
                                 background-color: #529B9A;
                             }
@@ -889,5 +922,40 @@
                                 color: #96509F;
                                 font-weight: 600;
                                 font-size: 17px;
+                            }
+                            
+                            @media all and (min-width: 992px) {
+                                .dropdown-menu {
+                                    width: 13rem;
+                                }
+                                .mega-submenu {
+                                    left: 100%;
+                                    top: 0;
+                                    min-width: 25rem;
+                                }
+                                .ktm-mega-menu {
+                                    position: static !important;
+                                }
+                                .mega-menu {
+                                    left: 0;
+                                    right: 0;
+                                    width: 100%;
+                                }
+                                .dropdown-menu li {
+                                    position: relative;
+                                }
+                                .dropdown-menu .submenu {
+                                    display: none;
+                                    left: 100%;
+                                    top: 0;
+                                }
+                                .dropdown-menu>li:hover>.submenu,
+                                .dropdown:hover>.dropdown-menu {
+                                    display: block;
+                                }
+                            }
+                            
+                            .menu-line {
+                                line-height: 26px;
                             }
                             /*   card design template start here */
