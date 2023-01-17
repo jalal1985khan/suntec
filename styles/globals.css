@@ -26,6 +26,10 @@
                                 background-color: #913FA1;
                             }
                             
+                            .wbg-dark {
+                                background-color: #666666;
+                            }
+                            
                             .wbg-gy {
                                 background-color: #f4f4f4;
                             }
@@ -273,6 +277,22 @@
                                 width: 200px !important;
                             }
                             
+                            .partner-bg {
+                                background-color: #000000F5;
+                                background-image: url('/images/lines.png');
+                                color: #fff;
+                                height: 200px;
+                                display: flex;
+                                align-items: center;
+                            }
+                            
+                            .partner-logo {
+                                height: 159px;
+                                width: 277px;
+                                border: 1px solid #eaeaea;
+                                margin-top: 22px;
+                            }
+                            
                             .left-opp {
                                 width: 50% !important;
                                 height: 340px;
@@ -489,6 +509,19 @@
                                 cursor: pointer;
                             }
                             
+                            .list-sitemap li a {
+                                line-height: 40px;
+                                text-decoration: none;
+                                list-style: none;
+                                color: #000;
+                                font-size: 23px;
+                            }
+                            
+                            .list-sitemap li a:hover {
+                                color: #95519e;
+                                cursor: pointer;
+                            }
+                            
                             .b-text {
                                 background-color: #95519e;
                                 color: #ffff;
@@ -542,6 +575,15 @@
                                 ;
                             }
                             
+                            .f-banner {
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                height: 500px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                            }
+                            
                             .breadcum {
                                 background: #F1F1F1;
                                 height: 70px;
@@ -579,6 +621,27 @@
                                 --e-column-margin-right: 10px;
                                 --e-column-margin-left: 10px;
                                 padding: 30px 30px 30px 30px;
+                            }
+                            
+                            .sa_shadow {
+                                height: 620px !important;
+                                border: 0px !important;
+                                box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 28%);
+                                margin: 10px 10px 10px 10px;
+                                --e-column-margin-right: 10px;
+                                --e-column-margin-left: 10px;
+                                padding: 30px 30px 30px 30px;
+                            }
+                            
+                            .sao_shadow {
+                                height: 620px !important;
+                                border: 0px !important;
+                                box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 28%);
+                                margin: 10px 10px 10px 10px;
+                                --e-column-margin-right: 10px;
+                                --e-column-margin-left: 10px;
+                                padding: 30px 30px 30px 30px;
+                                background-color: #eaeaea !important;
                             }
                             
                             .c_body {
@@ -738,5 +801,93 @@
                                 border-bottom: 56px solid #008A87;
                                 border-right: 60px solid transparent;
                                 right: -60px;
+                            }
+                            
+                            .callout {
+                                padding: 20px;
+                                margin: 20px 0;
+                                border: 1px solid #eee;
+                                border-left-width: 5px;
+                                border-radius: 3px;
+                            }
+                            
+                            .callout h4 {
+                                margin-top: 0;
+                                margin-bottom: 5px;
+                            }
+                            
+                            .callout p:last-child {
+                                margin-bottom: 0;
+                            }
+                            
+                            .callout code {
+                                border-radius: 3px;
+                            }
+                            
+                            .callout+.bs-callout {
+                                margin-top: -5px;
+                            }
+                            
+                            .callout-default {
+                                border-left-color: #777;
+                            }
+                            
+                            .callout-default h4 {
+                                color: #777;
+                            }
+                            
+                            .callout-primary {
+                                border-left-color: #428bca;
+                            }
+                            
+                            .callout-primary h4 {
+                                color: #428bca;
+                            }
+                            
+                            .callout-success {
+                                border-left-color: #5cb85c;
+                            }
+                            
+                            .callout-success h4 {
+                                color: #5cb85c;
+                            }
+                            
+                            .callout-danger {
+                                border-left-color: #d9534f;
+                            }
+                            
+                            .callout-danger h4 {
+                                color: #d9534f;
+                            }
+                            
+                            .callout-warning {
+                                border-left-color: #f0ad4e;
+                            }
+                            
+                            .callout-warning h4 {
+                                color: #f0ad4e;
+                            }
+                            
+                            .callout-info {
+                                border-left-color: #5bc0de;
+                            }
+                            
+                            .callout-info h4 {
+                                color: #5bc0de;
+                            }
+                            
+                            .callout-bdc {
+                                border-left-color: #29527a;
+                            }
+                            
+                            .callout-bdc h4 {
+                                color: #29527a;
+                            }
+                            
+                            a.float-right {
+                                text-decoration: none;
+                                color: #96509F;
+                                font-weight: 600;
+                                font-size: 17px;
                             }
                             /*   card design template start here */

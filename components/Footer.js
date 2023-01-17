@@ -70,17 +70,16 @@ function LinksExample() {
 <ul className="text-white list-inline">
 <li><Link href="/company">Company</Link></li>
 <li>Contact Us</li>
-<li>Events</li>
-<li>Careers</li>
-<li>Covid Response</li>
+<li><Link href="/events">Events</Link></li>
+<li><Link href="/career">Careers</Link></li>
+<li><Link href="/blogs/suntecs-strategic-response-to-covid-19">Covid Response</Link></li>
 <li><Link href="/corporate-social-responsibility">CSR</Link></li>
 <li><Link href="/hr-initiative">HR Initiative</Link></li>
 <li><Link href="/news-room">Newsroom</Link></li>
-<li>Partners</li>
-<li>Notices</li>
-<li>Sitemap</li>
+<li><Link href="/partners">Partners</Link></li>
+<li><Link href="/notices">Notices</Link></li>
+<li><Link href="/sitemap">Sitemap</Link></li>
 <li><Link href="/privacypolicy">Privacy Policy</Link></li>
-
 </ul>
 </Col>
 </Row>
