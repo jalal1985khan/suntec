@@ -157,7 +157,7 @@ movies.map((post, index) => {
 
   return (
 
-<Container className="border p-4 mt-3">
+<Container className="border p-4 mt-3" key={post.id}>
 <Row>
 <Col sm={9}>
 <h2 dangerouslySetInnerHTML={{ __html:post['title']['rendered']}} />
