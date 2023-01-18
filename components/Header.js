@@ -25,7 +25,7 @@ function NavScrollExample() {
          <div className="collapse navbar-collapse justify-content-center lh-lg" id="main_nav">
             <ul className="navbar-nav p-3 p-md-0">
                <li className="nav-item dropdown ktm-mega-menu">
-                  <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                  <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products JP</a>
                   <div className="dropdown-menu mega-menu p-3">
                      <div className="row">
                      <div className="col-sm-8"><Link href="/" className="text-decoration-none text-black">
