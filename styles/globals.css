@@ -965,7 +965,7 @@
                             
                             .demo {
                                 position: fixed;
-                                bottom: 0px;
+                                bottom: 15px;
                                 z-index: 99;
                                 left: 21px;
                                 background: #FF6208;
@@ -973,5 +973,9 @@
                                 color: #fff;
                                 text-decoration: none;
                                 font-size: 19px;
+                            }
+                            
+                            .demo:hover {
+                                color: #fff !important;
                             }
                             /*   card design template start here */
