@@ -100,7 +100,7 @@ function NavScrollExample() {
 
 
                <li className="nav-item dropdown ktm-mega-menu">
-                  <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Industries</a>
+                  <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Industries -jp Changed</a>
                   <div className="dropdown-menu mega-menu p-3">
                      <div className="row">
                      <div className="col-sm-8">
