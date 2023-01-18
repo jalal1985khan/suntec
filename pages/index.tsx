@@ -1,6 +1,5 @@
 import {Container,Row, Col,Card ,Image} from 'react-bootstrap';
-import React, { useEffect, useState } from "react";
-import Moment from 'react-moment';
+import { useEffect, useState } from "react";
 import Link from 'next/link';
 import configData from "../config.json";
 
@@ -19,27 +18,17 @@ import Partners from '../components/Partners';
 import Footer from '../components/Footer';
 
 
-const index = () => {
+const HomePage = () => {
   const [movies, setMovies] = useState([]);
-  const [upcoming, setUpcoming] = useState([]);
-  const [page, setPage] = useState(9);
-  const [loading, setLoading] = useState(false);
-  const [category, setCategory] = useState();
-  const [error, setError] = useState({});
-  const [next, setNext] = useState();
-  const [total, setTotal] = useState();
-  const [end, setEnd] = useState(false);
   const fetchMovies = async () => {
-    setLoading(true);
+  
     let url = "";
-    const urlPage = `${page}`;
     url = `${configData.SERVER_URL}press_release?_embed&status=publish&homepage=312`;
     try {
       const response = await fetch(url);
       const data = await response.json();
       //console.log(data);
       setMovies(data);
-      setLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -67,11 +56,11 @@ useEffect(() => {
 <Row>
 {
 
-movies.map((post, index) => {
+movies.map((post) => {
   //console.log(post);
   return (
 
-<Col sm={6} className="p-1" >
+<Col sm={6} className="p-1" key={post['id']}>
 <div className="news-out">
  <Row className="news-in">
 <Col sm={5}>
@@ -100,7 +89,7 @@ movies.map((post, index) => {
   )
 }
 
-export default index
+export default HomePage
 
 
 
