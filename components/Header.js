@@ -290,7 +290,7 @@ function NavScrollExample() {
                      </div>
                   </div>
                </li>
-               {/* End Platforms */}
+               {/*  End Platforms  */}
 
 
 
