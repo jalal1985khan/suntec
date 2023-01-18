@@ -63,7 +63,7 @@ useEffect(() => {
     <Life/>
     <Testimonials/>
 <Container>
-<h2 className="mt-5">What’s New at SunTec</h2>
+<h2 className="mt-5">What&apos;s New at SunTec</h2>
 <Row>
 {
 
