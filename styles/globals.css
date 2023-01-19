@@ -18,6 +18,10 @@
                                     background-color: #8CDEE2;
                                 }
                                 
+                                .wbg-top {
+                                    background-color: #d5c0d9ae;
+                                }
+                                
                                 .wbg-menu {
                                     background-color: #FFF;
                                     height: 80px;
@@ -988,8 +992,16 @@
                             }
                              */
                                 
+                                .pr-text {
+                                    color: black;
+                                }
+                                
+                                .pr-text:hover {
+                                    color: #95519E;
+                                }
+                                
                                 .news-out {
-                                    border: 2px solid;
+                                    border: 2px solid #95519E;
                                     width: 200px;
                                     padding: 15px;
                                 }
@@ -997,7 +1009,7 @@
                                 .news-out:hover {
                                     width: 100%;
                                     transition: width .3s;
-                                    border: 2px solid;
+                                    border: 2px solid #95519E;
                                 }
                                 
                                 .news-in {
@@ -1006,5 +1018,19 @@
                                 
                                 .news-img {
                                     width: 220px;
+                                }
+                                
+                                .blog-img {
+                                    width: 100%;
+                                }
+                                
+                                .blog-padding {
+                                    padding-left: 0px !important;
+                                }
+                                
+                                .blog-desc {}
+                                
+                                .blog-img {
+                                    width: 100%
                                 }
                                 /*   card design template start here */
