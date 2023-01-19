@@ -189,7 +189,7 @@ className="pr-text text-decoration-none">{post['title']['rendered']}</Link>
 {
 
 blogFirst.map((post) => {
-  console.log(post);
+  //console.log(post);
 
   const Type =  post['type'];
   const Pslug =  post['slug'];
@@ -201,7 +201,7 @@ blogFirst.map((post) => {
     Links = Type + '/'+ Pslug;
   }
 return (
-<Row className="wbg-main p-2 mx-1">
+<Row className="wbg-main p-2 mx-1" key={post['id']}>
 <Col className="blog-padding middle">
 <img  src={post['home_pr']} className="blog-img"/>
 </Col>  
@@ -226,7 +226,7 @@ className="pr-text text-decoration-none">
 {
 
 blogSecond.map((post) => {
-  console.log(post);
+  //console.log(post);
 
   const Type =  post['type'];
   const Pslug =  post['slug'];
@@ -238,7 +238,7 @@ blogSecond.map((post) => {
     Links = Type + '/'+ Pslug;
   }
 return (
-<Row className="wbg-gy p-2 mb-3" style={{height:14+'em'}}> 
+<Row className="wbg-gy p-2 mb-3" style={{height:14+'em'}} key={post['id']}> 
 <Col className='blog-padding middle'>
 <Link 
 href={Links}
@@ -261,7 +261,7 @@ className="pr-text text-decoration-none">
 {
 
 blogThird.map((post) => {
-  console.log(post);
+  //console.log(post);
 
   const Type =  post['type'];
   const Pslug =  post['slug'];
@@ -273,7 +273,7 @@ blogThird.map((post) => {
     Links = Type + '/'+ Pslug;
   }
 return (
-<Row className="wbg-top p-2 mb-4" style={{height:14+'em'}}>
+<Row className="wbg-top p-2 mb-4" style={{height:14+'em'}} key={post['id']}>
 <Col sm={5} className="blog-padding middle">
 <img  src={post['featured_img_src']} className="blog-img"/>
 </Col>  
@@ -304,7 +304,7 @@ className="pr-text text-decoration-none">
 {
 
 blogFourth.map((post) => {
-  console.log(post);
+  //console.log(post);
 
   const Type =  post['type'];
   const Pslug =  post['slug'];
@@ -318,11 +318,7 @@ blogFourth.map((post) => {
   }
 
 return (
-
-
-
-
-<Row className="wbg-main p-2 mx-1">
+<Row className="wbg-main p-2 mx-1" key={post['id']}>
 <Col className="blog-padding middle">
 <img  src={post['home_pr']} className="blog-img"/>
 </Col>  
@@ -351,13 +347,12 @@ className="pr-text text-decoration-none">{post['title']['rendered']}</Link>
 {
 
 blogFifth.map((post) => {
-  console.log(post);
-
+  //console.log(post);
   const Type =  post['type'];
   const Pslug =  post['slug'];
   const Links = Type + '/'+ Pslug;
 return (
-<Row className="wbg-gy p-2 mb-3" style={{height:14+'em'}}> 
+<Row className="wbg-gy p-2 mb-3" style={{height:14+'em'}} key={post['id']}> 
 <Col className='blog-padding middle'>
 <Link 
 href={Links}
@@ -380,14 +375,13 @@ className="pr-text text-decoration-none">
 {
 
 blogSixth.map((post) => {
-  console.log(post);
-
+  //console.log(post);
   const Type =  post['type'];
   const Pslug =  post['slug'];
   const Links = Type + '/'+ Pslug;
 
 return (
-<Row className="wbg-top p-2 mb-4" style={{height:14+'em'}}>
+<Row className="wbg-top p-2 mb-4" style={{height:14+'em'}} key={post['id']}>
 <Col sm={5} className="blog-padding middle">
 <img  src={post['featured_img_src']} className="blog-img"/>
 </Col>  
