@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 
-const saas = () => {
+const Cloud = () => {
 
   const [allInsights, setInsights] = useState([]);
   const [heading, setHeading] = useState(false); 
@@ -192,4 +192,4 @@ className="pr-text text-decoration-none">
   )
 }
 
-export default saas
+export default Cloud
