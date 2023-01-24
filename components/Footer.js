@@ -37,7 +37,7 @@ function LinksExample() {
 <h2 className="text-white fs-5">Solutions</h2>
 <hr className="border"/>
 <ul className="text-white list-inline">
-<li>Personalization</li>
+<li><Link href="/personalization">Personalization</Link></li>
 <li>Banking-as-a-Service</li>
 <li>Product Rationalization</li>
 <li>VAT for GCC</li>

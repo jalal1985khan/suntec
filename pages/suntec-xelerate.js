@@ -48,7 +48,7 @@ const Xelerate = () => {
         <Row>
           <Col sm={4}>
             <div className="r-text">
-              <div class="ribbon-1"></div>
+              <div class="ribbon-2"></div>
               <h1 className="fs-1">Enabling Digitally Empathetic Enterprises</h1>
               <div className="wbg-gr p-2 w-text">
                 <p className="fs-5">Increase Customer Lifetime Value | Manage Revenue Effectively
