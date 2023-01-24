@@ -30,7 +30,7 @@ function NavScrollExample() {
                      <div className="row">
                      <div className="col-sm-8"><Link href="/" className="text-decoration-none text-black">
                      <h2 className="fs-5">Products Overview</h2>
-                     <p>Accelerate innovation and customer centricity with SunTec.</p></Link>
+                     <p className="desc-text">Accelerate innovation and customer centricity with SunTec.</p></Link>
                      <hr className="border"/>
                        <div className="row">
                         <div className="col-sm-6">
@@ -108,7 +108,7 @@ function NavScrollExample() {
                         <div className="col-sm-8">
                         <Link href="/" className="text-decoration-none text-black">
                            <h2 className="fs-5">Industries Overview</h2>
-                           <p>Count on our vertical focused, award-winning products and solutions.</p></Link>
+                           <p className="desc-text">Count on our vertical focused, award-winning products and solutions.</p></Link>
                            <hr className="border"/>
                         <div className="row">
                         <div className="col-sm-6">
@@ -166,7 +166,7 @@ function NavScrollExample() {
                      <div className="row">
                         <div className="col-sm-8">
                         <h2 className="fs-5">Solutions Overview</h2>
-                        <p>Build relationships, enhance efficiency, and ensure compliance.</p>
+                        <p className="desc-text">Build relationships, enhance efficiency, and ensure compliance.</p>
                         <hr className="border"/>
                         <div className="row">
                               <div className="col-sm-6">
@@ -251,7 +251,7 @@ function NavScrollExample() {
                      <div className="row">
                         <div className="col-sm-8">
                            <h2 className="fs-5">Platforms Overview</h2>
-                           <p>Built for customer-centricity, efficiency, and security.</p>
+                           <p className="desc-text">Built for customer-centricity, efficiency, and security.</p>
                            <hr className="border"/>
                               <div className="row">
                                  <div className="col-sm-6">
@@ -301,7 +301,7 @@ function NavScrollExample() {
                      <div className="row">
                         <div className="col-sm-8">
                            <h2 className="fs-5">All Resources</h2>
-                           <p>Read up on the latest market developments and expert insights.</p>
+                           <p className="desc-text">Read up on the latest market developments and expert insights.</p>
                            <hr className="border"/>
                               <div className="row">
                                  <div className="col-sm-6">
@@ -399,7 +399,7 @@ function NavScrollExample() {
                         <div className="col-sm-8">
                            <Link href="/company" className="text-decoration-none text-black">
                               <h2 className="fs-5">Company</h2>
-                              <p>SunTec offers a portfolio of award-winning industry-agnostic products and solutions that empower organizations like yours to orchestrate seamless customer experiences, deliver exponential value, and much more!</p>
+                              <p className="desc-text">SunTec offers a portfolio of award-winning industry-agnostic products and solutions that empower organizations like yours to orchestrate seamless customer experiences, deliver exponential value, and much more!</p>
                            </Link>
                            <hr className="border"/>
                               <div className="row">

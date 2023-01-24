@@ -68,7 +68,7 @@
                                 }
                                 
                                 .wbg-dark {
-                                    background-color: #666666;
+                                    background-color: #666666 !important;
                                 }
                                 
                                 .wbg-gy {
@@ -1033,4 +1033,20 @@
                                 .blog-img {
                                     width: 100%
                                 }
+                                
+                                .desc-text {
+                                    line-height: 21px;
+                                }
                                 /*   card design template start here */
+                                
+                                @media only screen and (max-width: 600px) {
+                                    .ribbon-1 {
+                                        top: -14px !important;
+                                    }
+                                    .r-text {
+                                        width: 80% !important;
+                                    }
+                                    .w-text {
+                                        width: 125%;
+                                    }
+                                }

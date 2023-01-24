@@ -142,10 +142,8 @@ useEffect(() => {
 <h2 className="mt-5">What&apos;s New at SunTec</h2>
 <Row className="mb-5">
 {
-
 pr.map((post) => {
   // console.log(post);
-
   const Type =  post['type'];
   const Pslug =  post['slug'];
   let Links;
@@ -163,9 +161,7 @@ return (
 <img  src={post['_embedded']['wp:featuredmedia'][0]['source_url']} className="news-img"/>
 </Col>
 <Col className="middle fs-5" >
-<Link 
-href={Links}
-target="blank"
+<Link href={Links}
 className="pr-text text-decoration-none">{post['title']['rendered']}</Link>  
 </Col>
 </Row> 
@@ -208,7 +204,6 @@ return (
 <Col className="blog-desc middle">
 <Link 
 href={Links}
-target="blank"
 className="pr-text text-decoration-none">
 <h3 className="fs-5">{post['title']}</h3>
 <p dangerouslySetInnerHTML={{__html:post['excerpt']}} className="fs-6"/>
@@ -242,7 +237,6 @@ return (
 <Col className='blog-padding middle'>
 <Link 
 href={Links}
-target="blank"
 className="pr-text text-decoration-none">
 <h3  className="fs-5">{post['title']}</h3>
 <p dangerouslySetInnerHTML={{__html:post['excerpt']}} className="fs-6"/>
@@ -280,7 +274,6 @@ return (
 <Col className="middle">
 <Link 
 href={Links}
-target="blank"
 className="pr-text text-decoration-none">
 <h3 className="fs-5">{post['title']}</h3>
 <p dangerouslySetInnerHTML={{__html:post['excerpt']}} className="fs-6"/>
@@ -294,11 +287,7 @@ className="pr-text text-decoration-none">
 })}
 </Col>
 </Row>
-
 {/* second line start here  */}
-
-
-
 <Row>
 <Col>
 {
@@ -325,16 +314,11 @@ return (
 <Col className="blog-desc middle">
 <Link 
 href={Links}
-target="blank"
 className="pr-text text-decoration-none">
 <h3 className="fs-5">{post['title']}</h3>
 <p dangerouslySetInnerHTML={{__html:post['excerpt']}} className="fs-6"/>
 </Link>
-</Col> 
-<Link 
-href={Links}
-target="blank"
-className="pr-text text-decoration-none">{post['title']['rendered']}</Link>   
+</Col>    
 </Row>
   )
 })}
@@ -356,7 +340,6 @@ return (
 <Col className='blog-padding middle'>
 <Link 
 href={Links}
-target="blank"
 className="pr-text text-decoration-none">
 <h3  className="fs-5">{post['title']}</h3>
 <p dangerouslySetInnerHTML={{__html:post['excerpt']}} className="fs-6"/>
@@ -379,7 +362,6 @@ blogSixth.map((post) => {
   const Type =  post['type'];
   const Pslug =  post['slug'];
   const Links = Type + '/'+ Pslug;
-
 return (
 <Row className="wbg-top p-2 mb-4" style={{height:14+'em'}} key={post['id']}>
 <Col sm={5} className="blog-padding middle">
@@ -388,7 +370,6 @@ return (
 <Col className="middle">
 <Link 
 href={Links}
-target="blank"
 className="pr-text text-decoration-none">
 <h3 className="fs-5">{post['title']}</h3>
 <p dangerouslySetInnerHTML={{__html:post['excerpt']}} className="fs-6"/>

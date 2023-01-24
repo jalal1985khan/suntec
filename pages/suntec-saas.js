@@ -1,10 +1,40 @@
 import { Container, Row, Col, Image, Breadcrumb, Card, Button, Offcanvas } from 'react-bootstrap';
+import { useEffect, useState } from "react";
 import Link from 'next/link';
+import configData from "../config.json";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 
 const saas = () => {
+
+  const [allInsights, setInsights] = useState([]);
+  const [heading, setHeading] = useState(false); 
+
+  const fetchInsights = async () => {
+    let url = "";
+    url = `${configData.SERVER_URL}all-insights?tag=321`;
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      console.log(data.length);
+      setInsights(data);
+      if(data.length > 1){
+        setHeading(true);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+
+  useEffect(() => {
+    fetchInsights();
+  },[]);
+
+
+
   return (
     <>
       <Header />
@@ -26,7 +56,7 @@ const saas = () => {
               <div class="ribbon-1"></div>
               <h1 className="fs-1">SunTec SaaS</h1>
               <div className="wbg-gr p-2 w-text">
-                <p className="fs-5">Re-invent your business and deliver exceptional customer experience with SunTec’s ready-to-use SaaS solutions
+                <p className="fs-5">Re-invent your business and deliver exceptional customer experience with SunTec&apos;s ready-to-use SaaS solutions
                 </p>
               </div>
             </div>
@@ -308,8 +338,48 @@ const saas = () => {
             </Card>
           </Col>
         </Row>
-
       </Container>
+      <Container className="mb-5 mt-5 text-center">
+
+{heading && <h2>Our Latest Insights</h2>}
+
+<Container>
+  <Row>
+  {
+
+allInsights.map((post) => {
+  //console.log(post);
+
+  const Type =  post['type'];
+  const Pslug =  post['slug'];
+  let Links;
+  if(Type =='page'){
+    Links = Pslug;
+  }
+  else{
+    Links = Type + '/'+ Pslug;
+  }
+return (
+<Col key={post['id']} sm={4}>
+<Link 
+href={Links}
+className="pr-text text-decoration-none">
+<Card>
+      <Card.Img variant="top" src={post['featured_img_src']}/>
+      <Card.Body className="text-start" style={{height: 6 +'em'}}>
+        <Card.Title>{post['title']}</Card.Title>
+      </Card.Body>
+      <Card.Body  className="text-start">
+        <Card.Link >Read More</Card.Link>
+      </Card.Body>
+    </Card>
+</Link> 
+    </Col>
+  )
+})}
+</Row>
+</Container>
+</Container>      
       <Footer />
     </>
   )
