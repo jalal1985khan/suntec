@@ -38,7 +38,7 @@ function LinksExample() {
 <hr className="border"/>
 <ul className="text-white list-inline">
 <li><Link href="/personalization">Personalization</Link></li>
-<li><Link href="/suntec-banking-as-a-service-solution">Banking-as-a-Service</Link></li>
+<li>Banking-as-a-Service</li>
 <li>Product Rationalization</li>
 <li>VAT for GCC</li>
 <li>Negative Interest Management</li>

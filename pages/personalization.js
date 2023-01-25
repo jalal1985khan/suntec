@@ -1,32 +1,11 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button, Offcanvas} from 'react-bootstrap';
-import { useEffect, useState } from "react";
 import Link from 'next/link';
-import configData from "../config.json";
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 function LinksExample() {
-    const [allInsights, setInsights] = useState([]);
-    const [heading, setHeading] = useState(false); 
-  
-    const fetchInsights = async () => {
-      let url = "";
-      url = `${configData.SERVER_URL}all-insights?tag=333`;
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data.length);
-        setInsights(data);
-        if(data.length > 0){
-          setHeading(true);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    useEffect(() => {
-      fetchInsights();
-    },[]);
+
   
 
   return (
@@ -204,110 +183,13 @@ function LinksExample() {
     </Card>
 </Col>
 </Row>
-</Container>
-<Container className="wbg-gy p-5 text-center">
-<p className="fs-5 fw-bold">Know your customers better and deliver hyper-personalized offerings with SunTec.</p>
-<Button className="b-btn">Start a conversation</Button>
-</Container>
-<Container className="wbg-gy">
-    <h2>SunTec Products That Enable Personalization</h2>
-<Row>  
-<Col sm={6}>
-<Card className="d-flex flex-row c-height wbg-gy">
-      <Card.Img className="card-icon-left" src="images/icon_21.png"/>
-      <Card.Body>
-        <Card.Title>Enterprise Product Management</Card.Title>
-      </Card.Body>
-    </Card>
-</Col>
-<Col sm={6}>
-<Card className="d-flex flex-row c-height wbg-gy">
-      <Card.Img className="card-icon-left" src="images/icon_22.png"/>
-      <Card.Body>
-        <Card.Title>Ecosystem Management and Monetization</Card.Title>
-      </Card.Body>
-    </Card>
-</Col>   
-</Row>
-<Row>  
-<Col sm={6}>
-<Card className="d-flex flex-row c-height wbg-gy">
-      <Card.Img className="card-icon-left" src="images/icon_21.png"/>
-      <Card.Body>
-        <Card.Title>Dynamic Offer Management</Card.Title>
-      </Card.Body>
-    </Card>
-</Col>
-<Col sm={6}>
-<Card className="d-flex flex-row c-height wbg-gy">
-      <Card.Img className="card-icon-left" src="images/icon_22.png"/>
-      <Card.Body>
-        <Card.Title>Relationship-based Pricing Management</Card.Title>
-      </Card.Body>
-    </Card>
-</Col>   
-</Row>
-<Row>  
-<Col sm={6}>
-<Card className="d-flex flex-row c-height wbg-gy">
-      <Card.Img className="card-icon-left" src="images/icon_21.png"/>
-      <Card.Body>
-        <Card.Title>Benefits and Loyalty Management</Card.Title>
-      </Card.Body>
-    </Card>
-</Col>
-<Col sm={6} >
-<Card className="d-flex flex-row c-height wbg-gy">
-      <Card.Img className="card-icon-left" src="images/icon_22.png"/>
-      <Card.Body>
-        <Card.Title>Enterprise Billing and Statements Management</Card.Title>
-      </Card.Body>
-    </Card>
-</Col>   
-</Row>
 
-</Container>
-<Container className="mb-5 mt-5 text-center">
-{heading && <h2>Our Latest Insights</h2>}
-<Container>
-  <Row>
-  {
-
-allInsights.map((post) => {
-  //console.log(post);
-
-  const Type =  post['type'];
-  const Pslug =  post['slug'];
-  let Links;
-  if(Type =='page'){
-    Links = Pslug;
-  }
-  else{
-    Links = Type + '/'+ Pslug;
-  }
-return (
-<Col key={post['id']} sm={4}>
-<Link 
-href={Links}
-className="pr-text text-decoration-none">
-<Card>
-      <Card.Img variant="top" src={post['featured_img_src']}/>
-      <Card.Body className="text-start" style={{height: 6 +'em'}}>
-        <Card.Title>{post['title']}</Card.Title>
-      </Card.Body>
-      <Card.Body  className="text-start">
-        <Card.Link >Read More</Card.Link>
-      </Card.Body>
-    </Card>
-</Link> 
-    </Col>
-  )
-})}
-</Row>
-</Container>
 </Container>
 
 
+<Container className="wbg-sun text-white middle p-5" style={{height:7 +'em'}}>
+<h2>Join our Team of Dreamers, Innovators and Go-Getters</h2>
+</Container>
 <Footer/>
 </>
 
