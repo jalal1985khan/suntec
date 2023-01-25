@@ -1,32 +1,8 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button} from 'react-bootstrap';
-import { useEffect, useState } from "react";
 import Link from 'next/link';
-import configData from "../config.json";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 function LinksExample() {
-
-  const [allInsights, setInsights] = useState([]);
-  const [heading, setHeading] = useState(false); 
-
-  const fetchInsights = async () => {
-    let url = "";
-    url = `${configData.SERVER_URL}all-insights?tag=332`;
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data.length);
-      setInsights(data);
-      if(data.length > 1){
-        setHeading(true);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    fetchInsights();
-  },[]);
   return (
 <>
 <Header/>
@@ -57,11 +33,11 @@ enterprise solution for all aspects of taxation.</p>
 <Container>
 <Row className="d-flex flex-row mt-5 mb-5">
 <Col sm={6}>
-<img src="/images/xelerate.png" height="350"/>
+<img className='product-img' src="/images/xelerate.png" height="350"/>
 </Col>
 <Col sm={6}>
 <h2 className="fs-1">Why SunTec Xelerate?</h2>
-<p className="fs-5">SunTec&apos;s cloud-based Indirect Tax Management on SunTec Xelerate platform is uniquely designed as a digital innovation middle layer. It can easily integrate with the bank’s existing technology landscape. It is an out-of-the-box solution designed to de-clutter core systems, extract the indirect taxation logic and ensure smooth journey towards indirect tax (GST and VAT ) compliance. It comes equipped with pre-set rules and definitions that can be easily parameterized. SunTec’s Indirect Tax Management system on the cloud is a fully configurable framework that ensures the shortest turnaround to accommodate frequent regulatory changes.
+<p className="fs-5 product-text">SunTec&apos;s cloud-based Indirect Tax Management on SunTec Xelerate platform is uniquely designed as a digital innovation middle layer. It can easily integrate with the bank’s existing technology landscape. It is an out-of-the-box solution designed to de-clutter core systems, extract the indirect taxation logic and ensure smooth journey towards indirect tax (GST and VAT ) compliance. It comes equipped with pre-set rules and definitions that can be easily parameterized. SunTec’s Indirect Tax Management system on the cloud is a fully configurable framework that ensures the shortest turnaround to accommodate frequent regulatory changes.
 </p>
 </Col>
 </Row>    
@@ -139,7 +115,7 @@ enterprise solution for all aspects of taxation.</p>
 </Container>
 <Container className="gra_color pt-3" fluid style={{height:45 + 'em'}}>
 <Row>
-  <Col className="center"><img src="/images/xelerate.png" height="300"/></Col>
+  <Col className="center"><img className='product-img' src="/images/xelerate.png" height="300"/></Col>
   <Col>
   <h3 className="text-white fs-2">&quot;Businesses need a centralized platform to manage tax segregation, accounting, invoicing and exemptions to achieve compliance.&quot;</h3>
   <ul className="mt-5">
@@ -222,44 +198,67 @@ enterprise solution for all aspects of taxation.</p>
 <Button className="b-btn">Accelerate with SunTec Xelerate!</Button>
 </Container>
 <Container className="mb-5 mt-5 text-center">
-{heading && <h2>Our Latest Insights</h2>}
+<h2>Our Latest Insights</h2>
+
 <Container>
   <Row>
-  {
-
-allInsights.map((post) => {
-  //console.log(post);
-
-  const Type =  post['type'];
-  const Pslug =  post['slug'];
-  let Links;
-  if(Type =='page'){
-    Links = Pslug;
-  }
-  else{
-    Links = Type + '/'+ Pslug;
-  }
-return (
-<Col key={post['id']} sm={4}>
-<Link 
-href={Links}
-className="pr-text text-decoration-none">
-<Card>
-      <Card.Img variant="top" src={post['featured_img_src']}/>
-      <Card.Body className="text-start" style={{height: 6 +'em'}}>
-        <Card.Title>{post['title']}</Card.Title>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
       </Card.Body>
-      <Card.Body  className="text-start">
-        <Card.Link >Read More</Card.Link>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
       </Card.Body>
     </Card>
-</Link> 
     </Col>
-  )
-})}
-</Row>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    </Row>
+
 </Container>
+
+
+
 </Container>
+
+
 <Footer/>
 </>
 

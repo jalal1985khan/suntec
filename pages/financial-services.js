@@ -1,33 +1,7 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button} from 'react-bootstrap';
-import { useEffect, useState } from "react";
-import Link from 'next/link';
-import configData from "../config.json";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 function LinksExample() {
-
-  const [allInsights, setInsights] = useState([]);
-  const [heading, setHeading] = useState(false); 
-
-  const fetchInsights = async () => {
-    let url = "";
-    url = `${configData.SERVER_URL}all-insights?tag=319`;
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data.length);
-      setInsights(data);
-      if(data.length > 1){
-        setHeading(true);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    fetchInsights();
-  },[]);
-
   return (
 <>
 <Header/>
@@ -55,9 +29,9 @@ function LinksExample() {
 </Container>
 <Container>
 <h1 className="fs-2 mt-5 mb-5">The Transformation Journey Has Just Begun</h1>
-<p className="fs-5">Banks have spent a lot of money on the customer facing layer, which results in improved customer ratings. But most of them are still unable to utilize data to provide innovative products and personalize the customer experience.</p>
-<p className="fs-5">A big impediment to owning the customer experience is the “speed to market” which remains a challenge for most banks.</p>
-<p className="fs-5">In today&apos;s scenario, banks face unorthodox competition from the likes of Google and Facebook, to name a few. To remain the choice of customers and be competitive banks must aggressively adopt the digital route and transform their go to market approach.</p>
+<p className="fs-5 industry-text">Banks have spent a lot of money on the customer facing layer, which results in improved customer ratings. But most of them are still unable to utilize data to provide innovative products and personalize the customer experience.</p>
+<p className="fs-5 industry-text">A big impediment to owning the customer experience is the “speed to market” which remains a challenge for most banks.</p>
+<p className="fs-5 industry-text">In today&apos;s scenario, banks face unorthodox competition from the likes of Google and Facebook, to name a few. To remain the choice of customers and be competitive banks must aggressively adopt the digital route and transform their go to market approach.</p>
 
 <h2 className="fs-2 mt-5 mb-5">The Challenges</h2>
 <Row>  
@@ -136,7 +110,7 @@ function LinksExample() {
 </Container>
 <Container className="gra_color" fluid style={{height:35 + 'em'}}>
 <Row>
-  <Col><img src="/images/xelerate.png" height="300"/></Col>
+  <Col><img className='industry-img' src="/images/xelerate.png" height="300"/></Col>
   <Col>
   <h3 className="text-white fs-2">How SunTec Simplifies Your Transformation Journey? (Financial services)</h3>
   <ul className="mt-5">
@@ -150,7 +124,7 @@ Get end-to-end product innovation capabilities, sophisticated customer data mana
 <Container className="mb-5">
 
 <h1 className="fs-2 mt-5 mb-5">SunTec Offerings</h1>
-<p className="fs-5">See how we combine components of SunTec Xelerate to create specific solutions for digital transformation, revenue management, customer experience orchestration and partner ecosystem management.</p>
+<p className="fs-5 industry-text">See how we combine components of SunTec Xelerate to create specific solutions for digital transformation, revenue management, customer experience orchestration and partner ecosystem management.</p>
 <Row>
 <Col>
 <Card className="c_shadow" style={{height:28+ 'em'}}>
@@ -283,44 +257,67 @@ Your one-stop-solution for all GST and VAT regulatory compliance requirements. C
 <Button className="b-btn">Discover Now</Button>
 </Container>
 <Container className="mb-5 mt-5 text-center">
-{heading && <h2>Our Latest Insights</h2>}
+<h2>Our Latest Insights</h2>
+
 <Container>
   <Row>
-  {
-
-allInsights.map((post) => {
-  //console.log(post);
-
-  const Type =  post['type'];
-  const Pslug =  post['slug'];
-  let Links;
-  if(Type =='page'){
-    Links = Pslug;
-  }
-  else{
-    Links = Type + '/'+ Pslug;
-  }
-return (
-<Col key={post['id']} sm={4}>
-<Link 
-href={Links}
-className="pr-text text-decoration-none">
-<Card>
-      <Card.Img variant="top" src={post['featured_img_src']}/>
-      <Card.Body className="text-start" style={{height: 6 +'em'}}>
-        <Card.Title>{post['title']}</Card.Title>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
       </Card.Body>
-      <Card.Body  className="text-start">
-        <Card.Link >Read More</Card.Link>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
       </Card.Body>
     </Card>
-</Link> 
     </Col>
-  )
-})}
-</Row>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    </Row>
+
 </Container>
+
+
+
 </Container>
+
+
 <Footer/>
 </>
 

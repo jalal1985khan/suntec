@@ -1,33 +1,8 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button} from 'react-bootstrap';
-import { useEffect, useState } from "react";
 import Link from 'next/link';
-import configData from "../config.json";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 function LinksExample() {
-
-  const [allInsights, setInsights] = useState([]);
-  const [heading, setHeading] = useState(false); 
-
-  const fetchInsights = async () => {
-    let url = "";
-    url = `${configData.SERVER_URL}all-insights?tag=329`;
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data.length);
-      setInsights(data);
-      if(data.length > 1){
-        setHeading(true);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    fetchInsights();
-  },[]);
-
   return (
 <>
 <Header/>
@@ -57,11 +32,11 @@ function LinksExample() {
 <Container>
 <Row className="d-flex flex-row mt-5 mb-5">
 <Col sm={6}>
-<img src="/images/xelerate.png" height="350"/>
+<img className='product-img' src="/images/xelerate.png" height="350"/>
 </Col>
 <Col sm={6}>
 <h2 className="fs-1">Why SunTec Xelerate?</h2>
-<p className="fs-5">
+<p className="fs-5 product-text">
 SunTec&apos;s Enterprise Billing and Statements Management on SunTec Xelerate platform provides extremely rich billing and invoicing capabilities. It helps in automating the end- to-end billing process including pricing, consolidation, pre-billing steps, invoicing and post billing activities including settlement, dispute management and arrears management. Consolidation of different products and services, different entities and geographies into a single invoice for the end customer as well as convergence of multiple billing systems into a single billing system for operational excellence can be easily achieved with out-of-the-box capabilities in a very short time. Multi-currency and multi-language capabilities further makes the enterprise billing and statements management a truly global system.    
 </p>
 </Col>
@@ -161,7 +136,7 @@ SunTec&apos;s Enterprise Billing and Statements Management on SunTec Xelerate pl
 </Container>
 <Container className="gra_color pt-3" fluid style={{height:45 + 'em'}}>
 <Row>
-  <Col className="center"><img src="/images/xelerate.png" height="300"/></Col>
+  <Col className="center"><img className="product-img" src="/images/xelerate.png" height="300"/></Col>
   <Col>
   <h3 className="text-white fs-2">&quot;A centralized billing functionality that streamlines processes across multiple LoBs and service lines.&quot;</h3>
   <ul className="mt-5">
@@ -252,44 +227,67 @@ SunTec&apos;s Enterprise Billing and Statements Management on SunTec Xelerate pl
 <Button className="b-btn">What? How? I want to know more</Button>
 </Container>
 <Container className="mb-5 mt-5 text-center">
-{heading && <h2>Our Latest Insights</h2>}
+<h2>Our Latest Insights</h2>
+
 <Container>
   <Row>
-  {
-
-allInsights.map((post) => {
-  //console.log(post);
-
-  const Type =  post['type'];
-  const Pslug =  post['slug'];
-  let Links;
-  if(Type =='page'){
-    Links = Pslug;
-  }
-  else{
-    Links = Type + '/'+ Pslug;
-  }
-return (
-<Col key={post['id']} sm={4}>
-<Link 
-href={Links}
-className="pr-text text-decoration-none">
-<Card>
-      <Card.Img variant="top" src={post['featured_img_src']}/>
-      <Card.Body className="text-start" style={{height: 6 +'em'}}>
-        <Card.Title>{post['title']}</Card.Title>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
       </Card.Body>
-      <Card.Body  className="text-start">
-        <Card.Link >Read More</Card.Link>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
       </Card.Body>
     </Card>
-</Link> 
     </Col>
-  )
-})}
-</Row>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    </Row>
+
 </Container>
+
+
+
 </Container>
+
+
 <Footer/>
 </>
 

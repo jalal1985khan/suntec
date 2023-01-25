@@ -85,7 +85,7 @@ function LinksExample() {
     </Breadcrumb>
 </Container>
 <Container className="p-3 b-banner" fluid style={{ 
-      backgroundImage: `url("/images/videos.png")` 
+      backgroundImage: `url("/images/Newsroom.jpg")` 
     }}>
 
 <Row>

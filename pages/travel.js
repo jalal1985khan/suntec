@@ -1,33 +1,7 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button} from 'react-bootstrap';
-import { useEffect, useState } from "react";
-import Link from 'next/link';
-import configData from "../config.json";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 function LinksExample() {
-
-  const [allInsights, setInsights] = useState([]);
-  const [heading, setHeading] = useState(false); 
-
-  const fetchInsights = async () => {
-    let url = "";
-    url = `${configData.SERVER_URL}all-insights?tag=323`;
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data.length);
-      setInsights(data);
-      if(data.length > 1){
-        setHeading(true);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    fetchInsights();
-  },[]);
-
   return (
 <>
 <Header/>
@@ -55,8 +29,8 @@ function LinksExample() {
 </Container>
 <Container>
 <h1 className="fs-2 mt-5 mb-5">Travel Management Companies Are Struggling to Differentiate</h1>
-<p className="fs-5">Demand for Corporate travel is growing but the competition is getting equally fierce. Barriers to entry are almost non-existent resulting in intense competition between suppliers and players. This directly impacts pricing and transaction fees creating consistent pressure on margins.</p>
-<p className="fs-5">The sector continues to witness disruption across, forcing many established players to look at technology as a differentiator to connect better with the customer and stay ahead of its competitors. But it is not an easy decision, as most players that have been in the industry for a while have accumulated multiple legacy systems that are not integrated. More importantly, these systems do not have the agility and/or flexibility required for the next level of customer centric digital transformation that the Travel Management Companies (TMCs) need so badly today. A complete overhaul of the revenue management system is the need of the hour for the TMCs.</p>
+<p className="fs-5 industry-text">Demand for Corporate travel is growing but the competition is getting equally fierce. Barriers to entry are almost non-existent resulting in intense competition between suppliers and players. This directly impacts pricing and transaction fees creating consistent pressure on margins.</p>
+<p className="fs-5 industry-text">The sector continues to witness disruption across, forcing many established players to look at technology as a differentiator to connect better with the customer and stay ahead of its competitors. But it is not an easy decision, as most players that have been in the industry for a while have accumulated multiple legacy systems that are not integrated. More importantly, these systems do not have the agility and/or flexibility required for the next level of customer centric digital transformation that the Travel Management Companies (TMCs) need so badly today. A complete overhaul of the revenue management system is the need of the hour for the TMCs.</p>
 
 
 <h2 className="fs-2 mt-5 mb-5">The Challenges</h2>
@@ -119,7 +93,7 @@ function LinksExample() {
 </Container>
 <Container className="gra_color" fluid style={{height:35 + 'em'}}>
 <Row>
-  <Col><img src="/images/xelerate.png" height="300"/></Col>
+  <Col><img className='industry-img' src="/images/xelerate.png" height="300"/></Col>
   <Col>
   <h3 className="text-white fs-2">How Can SunTec Help Unlock Value?</h3>
   <ul className="mt-5">
@@ -132,7 +106,7 @@ function LinksExample() {
 <Container className="mb-5">
 
 <h1 className="fs-2 mt-5 mb-5">SunTec Offerings</h1>
-<p className="fs-5">See how we combine components of SunTec Xelerate to create specific solutions for digital transformation, revenue management, customer experience orchestration and partner ecosystem management.</p>
+<p className="fs-5 industry-text">See how we combine components of SunTec Xelerate to create specific solutions for digital transformation, revenue management, customer experience orchestration and partner ecosystem management.</p>
 <Row>
 <Col>
 <Card className="c_shadow" style={{height:400 +'px'}}>
@@ -213,45 +187,7 @@ pattern-based selective invoice review to ensure quick revenue realization.
 <Button className="b-btn">See SunTec Xelerate in action</Button>
 </Container>
 
-<Container className="mb-5 mt-5 text-center">
-{heading && <h2>Our Latest Insights</h2>}
-<Container>
-  <Row>
-  {
 
-allInsights.map((post) => {
-  //console.log(post);
-
-  const Type =  post['type'];
-  const Pslug =  post['slug'];
-  let Links;
-  if(Type =='page'){
-    Links = Pslug;
-  }
-  else{
-    Links = Type + '/'+ Pslug;
-  }
-return (
-<Col key={post['id']} sm={4}>
-<Link 
-href={Links}
-className="pr-text text-decoration-none">
-<Card>
-      <Card.Img variant="top" src={post['featured_img_src']}/>
-      <Card.Body className="text-start" style={{height: 6 +'em'}}>
-        <Card.Title>{post['title']}</Card.Title>
-      </Card.Body>
-      <Card.Body  className="text-start">
-        <Card.Link >Read More</Card.Link>
-      </Card.Body>
-    </Card>
-</Link> 
-    </Col>
-  )
-})}
-</Row>
-</Container>
-</Container>
 
 <Footer/>
 </>

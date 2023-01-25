@@ -37,7 +37,7 @@ function LinksExample() {
 <h2 className="text-white fs-5">Solutions</h2>
 <hr className="border"/>
 <ul className="text-white list-inline">
-<li><Link href="/personalization">Personalization</Link></li>
+<li>Personalization</li>
 <li>Banking-as-a-Service</li>
 <li>Product Rationalization</li>
 <li>VAT for GCC</li>
@@ -95,8 +95,8 @@ function LinksExample() {
 <h2 className="text-white fs-5">Platforms</h2>
 <hr className="border"/>
 <ul className="text-white list-inline">
-<li><Link href="/suntec-xelerate">Xelerate</Link></li>
-<li><Link href="/suntec-cloud">Cloud</Link></li>
+<li><Link href="/financial-services">Xelerate</Link></li>
+<li><Link href="/telecom">Cloud</Link></li>
 <li><Link href="/suntec-saas">Saas</Link></li>
 </ul>
 </Col>
@@ -105,12 +105,12 @@ function LinksExample() {
 </Row>
 </Container>
 <Container className="wbg-dark text-white middle " fluid style={{height:5 +'em'}}>
-<Row>
+<Row className='footer-flex'>
 <Col className="center fs-5 fw-bold d-flex justify-content-end">Follow us</Col>  
 <Col>
-<img src="/images/f_icon_link.svg"/>
-<img src="/images/f_icon_twitter.svg"/>
-<img src="/images/f_icon_you.svg"/>
+<img className='footer-icon' src="/images/f_icon_link.svg"/>
+<img className='footer-icon' src="/images/f_icon_twitter.svg"/>
+<img className='footer-icon' src="/images/f_icon_you.svg"/>
 </Col>  
 </Row>
 </Container>
