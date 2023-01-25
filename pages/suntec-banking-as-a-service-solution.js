@@ -36,12 +36,12 @@ function LinksExample() {
 <Breadcrumb >
       <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
       <Breadcrumb.Item href="/personalization" active>
-      SunTec Personalization Solution for Banking
+      SunTec Banking-as-a-Service Solution
       </Breadcrumb.Item>
     </Breadcrumb>
 </Container>
 <Container className="p-3 b-banner" fluid style={{ 
-      backgroundImage: `url("/images/personliasetion.png")` 
+      backgroundImage: `url("/images/]SunTec-Banking-as-a-Service-Solution.jpg")` 
     }}>
 
 <Row>
@@ -49,9 +49,9 @@ function LinksExample() {
 <div className="square-dark">
 <div class="lin-dark"></div>
 <div className="square-text-dark ">
-<h1 className="fs-1">SunTec Personalization Solution for Banking</h1>
-<p className="fs-5">Tailor your banking offers to suit customers&apos; specific needs</p>
-<Button  className="b-btn">Read our use cases</Button>
+<h1 className="fs-1">SunTec Banking-as-a-Service Solution</h1>
+<p className="fs-5">Deliver lifecycle experiences through an ecosystem of partners</p>
+{/* <Button  className="b-btn">Read our use cases</Button> */}
 </div>
 <div class="lin-dark"></div>
 </div>
@@ -60,12 +60,13 @@ function LinksExample() {
 </Col> 
 </Row>
 </Container>
-<Container className="mt-5">
-<p className="fs-5">Banks have a dual challenge today – a demanding customer and a whole new set of competitors. User experiences in e-commerce and other industries with digital offerings are so seamlessly designed that today’s customer sees that as the norm. This sort of experience expectation is increasingly felt across the consumer ecosystem including their traditional banks. The problem is compounded by the fact that customers’ relationships with their banks today is are a relationship of friction; they are either intimidated or unimpressed – neither bodes well for the banking industry or the bank. At the same time, the new-age challengers and neobanks are precisely meeting the evolving experience expectations with their innovative offerings enabled by cloud and digital technologies like AI, ML, AR/VR, RPA, chatbots and self-service. The only way forward for banks is to understand the power of personalization in banking. They will need to leverage data and agile technologies to anticipate and respond to individual customer needs, design offerings to target segments of one and build deep relationships.</p>
+<Container className="mt-5 wbg-light p-5">
+<p className="fs-5">To meet the challenges of increasing competition, stringent regulations, and other macro-economic factors impacting the sector, banks must transform to put the customer at the very core of everything. At the same time, banks must serve larger customer bases at lower costs to open new revenue streams and increase consumption of banking services through non-banking channels.</p>
+<p className="fs-5">As customer-centric strategies rule the roost, the business of banking is moving out of the exclusive realm of banks and into a comprehensive ecosystem designed to meet customer requirements and help banks grow revenues. Technology, of course, is the key driver of such integrated banking ecosystems and plays a critical role in enabling providers, enablers, and distributors of new banking models.</p>
 </Container>
 
 <Container className="p-3 pe-banner" fluid style={{ 
-      backgroundImage: `url("/images/personalization_banner.jpeg")` 
+      backgroundImage: `url("/images/Negative-Interest-mid-section.jpeg")` 
     }}>
 
 <Row>
@@ -73,13 +74,163 @@ function LinksExample() {
 </Col> 
 <Col>
 <div className="pe-text">
-<h1>Why Personalization?</h1>
-<p className="fs-5">Conventional offers and loyalty programs are a small part of customers expectation to stay with their banks. Personalized customer engagement and an end-to-end experience are needed, mapped to each customer’s unique journey and context. Treating each customer problem as unique and designing solutions to address these needs with speed, across touch points and using available data to do so, can transform customer engagement and experience. The rewards are many – improving customer acquisition, retention, loyalty, growing wallet share, driving incremental revenue, positively affecting top-line growth and of course, giving banks a better chance at being relevant.</p>
-<p className="fs-5">Personalization is critical because customer behavior and expectations are changing dramatically. Today’s customers expect choices and wants to be treated uniquely. Personalization will help banks win customer trust and loyalty. If banks are to stay relevant and compete with their new-age competition, the key lies in personalization and the creating customized experiences.</p>
+<h1>Why Banking-as-a-Service?</h1>
+<p className="fs-5">Banking-as-a-Service (BaaS) helps bring personalized, customer-centric offerings to market faster. Banks can expand their footprint and connect with new demographics to solve broader lifecycle needs and evolve into the &apos;everyday bank and customer owner&apos; by collaborating with a host of partners. BaaS can enhance customer loyalty and create new revenue streams with a robust ecosystem management and monetization platform. The model allows banks to focus on their strengths and minimize gaps in customer satisfaction for future growth.</p>
+<p className="fs-5">As BaaS matures and evolves further, there is a need for robust technology platforms that can integrate digital banking ecosystems and work with:</p>
+<ul>
+ <li className="fs-5">Providers: who give access to core elements of the banking product and operations stack</li>   
+ <li className="fs-5">Enablers: who unify the disparate elements into usable solutions</li>
+ <li className="fs-5">Distributors: who take the solution to the customers via proprietary customer channels</li>
+</ul>
 </div>
 </Col> 
 </Row>
 </Container>
+<Container className="wbg-light p-5">
+<h2>How Does SunTec Enable Banking-as-a-Service?</h2>
+<p className="fs-5">Legacy banking cores cannot scale up to deliver the agility and compute power required to operate BaaS models. An agile middle-layer solution that can sit over the core is the answer for banks intending to deploy BaaS strategies. SunTec Xelerate is an enterprise-wide, agile, scalable and secure digital layer which integrates seamlessly with core systems, consolidating customer and product data for co-innovation. Its API-based infrastructure can handle every level in the growing spectrum of Business Model complexity.</p>
+<p className="fs-5">SunTec Xelerate enables banks to explore BaaS models by providing a single unified data store and a single store of value. It breaks down silos to connect disparate systems and deliver real-time insights that facilitate better decision-making. It allows banks to improve bundling strategies as well as facilitates bundling, unbundling, and re-bundling of a full ecosystem of products. With SunTec, banks can deliver a hyper-personalized banking experience with a focus on customer acquisition and interaction. Get the flexibility needed to customize the customer experience by removing silos. Further, as the lines between B2C and B2B banking blur, SunTec Xelerate can help manage multiple aspects of high-impact partner ecosystems seamlessly.</p>
+</Container>
+<Container className="wbg-gr p-5">
+<h2>Key Capabilities</h2>
+<p className="fs-5">SunTec Xelerate seamlessly manages foundational factors for BaaS Models:</p>
+<Row>
+<Col className="">
+<p className="fs-4 fw-bold">1. Manage</p>
+<ul>
+<li className="fs-5">Pre-defined product packages and offers for customers</li>
+<li className="fs-5">Price governance across the marketplace using SLAs</li>
+<li className="fs-5">End-to-end partner management</li>
+<li className="fs-5">Partner contracts, with revenue-sharing computation and settlement</li>
+<li className="fs-5">Innovation with disruptive pricing models</li>
+</ul>
+
+</Col>
+<Col className="center">
+<img src="images/manage-key.png"/>
+</Col>
+</Row>
+<Row className="mt-5">
+<Col className="">
+<p className="fs-4 fw-bold">2. Monetize</p>
+<ul>
+<li className="fs-5">Freemium</li>
+<li className="fs-5">Pay as you go</li>
+<li className="fs-5">Slab / tier-based</li>
+<li className="fs-5">Fixed quota</li>
+<li className="fs-5">Ecosystem model</li>
+<li className="fs-5">Subscription model</li>
+<li className="fs-5">Factors of medium, date/time, channel, payload etc.</li>
+</ul>
+</Col>
+<Col className="center">
+<img src="images/monetize-key.png"/>
+</Col>
+</Row>
+
+<Row className="mt-5">
+<Col className="">
+<p className="fs-4 fw-bold">3. Monitor</p>
+<ul>
+<li className="fs-5">Customer and partner consumption patterns – volume, value, channel, partner, committed products</li>
+<li className="fs-5">On-us and Off-us tracking</li>
+<li className="fs-5">Revenue leakage and non-compliance of receivables from third-party providers (TPPs)</li>
+<li className="fs-5">End-to-end invoicing and settlement process</li>
+</ul>
+</Col>
+<Col className="center">
+<img src="images/monitor-key.png"/>
+</Col>
+</Row>
+</Container>
+<Container className="wbg-light p-5">
+    <h2>Business Benefits</h2>
+<Row>  
+<Col sm={6}>
+<Card className="d-flex flex-row c-height wbg-light">
+      <Card.Img className="card-icon-left" src="images/bb_iocn_1.png"/>
+      <Card.Body>
+        <Card.Title>Centralize products and services and <span className="fw-bold">enable relationship banking</span></Card.Title>
+      </Card.Body>
+    </Card>
+</Col>
+<Col sm={6}>
+<Card className="d-flex flex-row c-height wbg-light">
+      <Card.Img className="card-icon-left" src="images/bb_iocn_2.png"/>
+      <Card.Body>
+        <Card.Title><span className="fw-bold">Drive customer engagement</span> with innovative, personalized need-based offerings, orchestrating end-to-end experiences</Card.Title>
+      </Card.Body>
+    </Card>
+</Col>   
+</Row>
+<Row>  
+<Col sm={6}>
+<Card className="d-flex flex-row c-height wbg-light">
+      <Card.Img className="card-icon-left" src="images/bb_iocn_3.png"/>
+      <Card.Body>
+        <Card.Title>
+Effectively <span className="fw-bold">engage with internal and partner applications</span> without disrupting core systems</Card.Title>
+      </Card.Body>
+    </Card>
+</Col>
+<Col sm={6}>
+<Card className="d-flex flex-row c-height wbg-light">
+      <Card.Img className="card-icon-left" src="images/bb_iocn_4.png"/>
+      <Card.Body>
+        <Card.Title><span className="fw-bold">Respond to the next big thing quickly</span>, without disruption</Card.Title>
+      </Card.Body>
+    </Card>
+</Col>   
+</Row>
+</Container>
+
+<Container className="wbg-gy p-5 my-5 text-center">
+<p className="fs-5 fw-bold">Rounding up the pulse of the industry as we go along.</p>
+<Button className="b-btn">Be up to date now!</Button>
+</Container>
+<Container className="wbg-gy p-5">
+<h2>Products That Enable this Solution</h2>
+<Row>  
+<Col sm={6}>
+<Card className="d-flex flex-row c-height wbg-gy">
+      <Card.Img className="card-icon-left" src="images/bb_iocn_3.png"/>
+      <Card.Body>
+        <Card.Title>
+Effectively <span className="fw-bold">engage with internal and partner applications</span> without disrupting core systems</Card.Title>
+      </Card.Body>
+    </Card>
+</Col>
+<Col sm={6}>
+<Card className="d-flex flex-row c-height wbg-gy">
+      <Card.Img className="card-icon-left" src="images/bb_iocn_4.png"/>
+      <Card.Body>
+        <Card.Title><span className="fw-bold">Respond to the next big thing quickly</span>, without disruption</Card.Title>
+      </Card.Body>
+    </Card>
+</Col>   
+</Row> 
+<Row>  
+<Col sm={6}>
+<Card className="d-flex flex-row c-height wbg-gy">
+      <Card.Img className="card-icon-left" src="images/bb_iocn_3.png"/>
+      <Card.Body>
+        <Card.Title>
+Effectively <span className="fw-bold">engage with internal and partner applications</span> without disrupting core systems</Card.Title>
+      </Card.Body>
+    </Card>
+</Col>
+<Col sm={6}>
+<Card className="d-flex flex-row c-height wbg-gy">
+      <Card.Img className="card-icon-left" src="images/bb_iocn_4.png"/>
+      <Card.Body>
+        <Card.Title><span className="fw-bold">Respond to the next big thing quickly</span>, without disruption</Card.Title>
+      </Card.Body>
+    </Card>
+</Col>   
+</Row>   
+</Container>
+
+
 <Container className="wbg-gy" fluid>
 <Container className="py-5">
 <h2>How Can Our Personalization Solution Help Banks?</h2>
@@ -205,10 +356,7 @@ function LinksExample() {
 </Col>
 </Row>
 </Container>
-<Container className="wbg-gy p-5 text-center">
-<p className="fs-5 fw-bold">Know your customers better and deliver hyper-personalized offerings with SunTec.</p>
-<Button className="b-btn">Start a conversation</Button>
-</Container>
+
 <Container className="wbg-gy">
     <h2>SunTec Products That Enable Personalization</h2>
 <Row>  

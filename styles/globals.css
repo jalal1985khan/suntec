@@ -22,6 +22,14 @@
                                     background-color: #d5c0d9ae;
                                 }
                                 
+                                .wbg-light {
+                                    background-color: #F3E8F0 !important;
+                                }
+                                
+                                .wbg-gr {
+                                    background-color: #E6F7F8 !important;
+                                }
+                                
                                 .wbg-menu {
                                     background-color: #FFF;
                                     height: 80px;
@@ -72,7 +80,7 @@
                                 }
                                 
                                 .wbg-gy {
-                                    background-color: #f4f4f4;
+                                    background-color: #f4f4f4 !important;
                                 }
                                 
                                 .wbg-black {
@@ -578,7 +586,7 @@
                                     height: auto;
                                     text-align: start;
                                     padding: 41px;
-                                    width: 700px;
+                                    width: 800px;
                                 }
                                 
                                 .r-text {
