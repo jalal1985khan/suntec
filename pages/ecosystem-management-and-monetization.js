@@ -1,33 +1,8 @@
 import {Container,Row, Col,Image,Breadcrumb,Card, Button} from 'react-bootstrap';
-import { useEffect, useState } from "react";
 import Link from 'next/link';
-import configData from "../config.json";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 function LinksExample() {
-
-  const [allInsights, setInsights] = useState([]);
-  const [heading, setHeading] = useState(false); 
-
-  const fetchInsights = async () => {
-    let url = "";
-    url = `${configData.SERVER_URL}all-insights?tag=330`;
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data.length);
-      setInsights(data);
-      if(data.length > 1){
-        setHeading(true);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    fetchInsights();
-  },[]);
-
   return (
 <>
 <Header/>
@@ -57,13 +32,13 @@ function LinksExample() {
 <Container>
 <Row className="d-flex flex-row mt-5 mb-5">
 <Col sm={6}>
-<img src="/images/xelerate.png" height="350"/>
+<img className='Product-img' src="/images/xelerate.png" height="350"/>
 </Col>
 <Col sm={6}>
 <h2 className="fs-1">Why SunTec Xelerate?</h2>
-<p className="fs-5">SunTec&apos;s Ecosystem Management and Monetization on SunTec Xelerate platform enables financial services, telecom, travel and insurance organizations to embrace the open economy and use it to their advantage. It helps organizations transform from a utility provider to a value aggregator. Organizations can expand their products and services offering by collaborating with external partner ecosystems, providing innovative solutions, adopting new business models and maximizing revenue by delivering true value to its customers.
+<p className="fs-5 product-text">SunTec&apos;s Ecosystem Management and Monetization on SunTec Xelerate platform enables financial services, telecom, travel and insurance organizations to embrace the open economy and use it to their advantage. It helps organizations transform from a utility provider to a value aggregator. Organizations can expand their products and services offering by collaborating with external partner ecosystems, providing innovative solutions, adopting new business models and maximizing revenue by delivering true value to its customers.
 </p>
-<p className="fs-5">SunTec&apos;s Ecosystem Management and Monetization achieves this through end-to-end management, monitoring, and monetization capabilities across the partner and the customer value chain. The solution is pre-packaged with powerful features that help organizations to leverage the true potential of the open economy.</p>
+<p className="fs-5 product-text">SunTec&apos;s Ecosystem Management and Monetization achieves this through end-to-end management, monitoring, and monetization capabilities across the partner and the customer value chain. The solution is pre-packaged with powerful features that help organizations to leverage the true potential of the open economy.</p>
 </Col>
 </Row>    
 </Container>
@@ -155,10 +130,10 @@ function LinksExample() {
 </Container>
 <Container className="gra_color pt-3" fluid style={{height:45 + 'em'}}>
 <Row>
-  <Col className="center"><img src="/images/xelerate.png" height="300"/></Col>
+  <Col className="center"><img className='product-img' src="/images/xelerate.png" height="300"/></Col>
   <Col>
   <h3 className="text-white fs-2">&quot;Deliver value to customers with comprehensive partner management capabilities.&quot;</h3>
-  <p className="text-white fs-5">Empower your organization with comprehensive partner management capabilities</p>
+  <p className="text-white fs-5 product-text">Empower your organization with comprehensive partner management capabilities</p>
   <ul className="mt-5">
    <li className="text-white fs-5"><strong>Co-create solutions:</strong> Create an ecosystem for various players, thereby addressing the customer&apos;s lifecycle needs, as well as ensuring seamless revenue management.</li> 
    <li className="text-white fs-5"><strong>Comprehensive partner management in the API economy:</strong> From price tariff and contract management, to revenue sharing computation and settlement, get end-to-end partner management capabilities.</li>
@@ -254,44 +229,67 @@ function LinksExample() {
 <Button className="b-btn">Be up to date now!</Button>
 </Container>
 <Container className="mb-5 mt-5 text-center">
-{heading && <h2>Our Latest Insights</h2>}
+<h2>Our Latest Insights</h2>
+
 <Container>
   <Row>
-  {
-
-allInsights.map((post) => {
-  //console.log(post);
-
-  const Type =  post['type'];
-  const Pslug =  post['slug'];
-  let Links;
-  if(Type =='page'){
-    Links = Pslug;
-  }
-  else{
-    Links = Type + '/'+ Pslug;
-  }
-return (
-<Col key={post['id']} sm={4}>
-<Link 
-href={Links}
-className="pr-text text-decoration-none">
-<Card>
-      <Card.Img variant="top" src={post['featured_img_src']}/>
-      <Card.Body className="text-start" style={{height: 6 +'em'}}>
-        <Card.Title>{post['title']}</Card.Title>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
       </Card.Body>
-      <Card.Body  className="text-start">
-        <Card.Link >Read More</Card.Link>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
       </Card.Body>
     </Card>
-</Link> 
     </Col>
-  )
-})}
-</Row>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col>
+<Card style={{ width: '24rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card&apos;s content.
+        </Card.Text>
+      </Card.Body>
+      <Card.Body>
+        <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    </Row>
+
 </Container>
+
+
+
 </Container>
+
+
 <Footer/>
 </>
 

@@ -3,7 +3,7 @@ import {Carousel,Container,Button} from 'react-bootstrap';
 function UncontrolledExample() {
   return (
     <Container fluid className="wbg-gy p-5">
-<h2 className="mb-5">Find Industry Solutions that Deliver Value</h2>
+<p className="fs-3">Find Industry Solutions that Deliver Value</p>
         <Container className="solutions">
     <Carousel >
       <Carousel.Item>

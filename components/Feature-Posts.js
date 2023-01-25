@@ -2,8 +2,7 @@ import {Container,Row, Col ,Button} from 'react-bootstrap';
 function LinksExample() {
   return (
 
-<Container className="f_content text-center p-3 mt-4">
-<p className="fs-3">Feature Content</p>
+<Container className="f_content text-center p-3 mt-5">
 <Container>
 <Row>
 <Col className="section-first" sm={4}>

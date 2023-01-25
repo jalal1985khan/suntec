@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/responsive.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
