@@ -43,7 +43,7 @@ useEffect(() => {
 
   return (
     <>
-  <Header/>
+    <Header/>
     <Banner/>
     <Text/>
     <Feature/>
@@ -86,7 +86,8 @@ movies.map((post) => {
 
     <Solutions/>
     <Partners/>
-    <Footer/>    
+    <Footer/>
+
     </>
   )
 }

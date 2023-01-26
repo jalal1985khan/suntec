@@ -18,10 +18,6 @@
                                     background-color: #8CDEE2;
                                 }
                                 
-                                .wbg-top {
-                                    background-color: #d5c0d9ae;
-                                }
-                                
                                 .wbg-menu {
                                     background-color: #FFF;
                                     height: 80px;
@@ -572,15 +568,6 @@
                                     width: 550px;
                                 }
                                 
-                                .pe-text {
-                                    background-color: #95519e;
-                                    color: #ffff;
-                                    height: auto;
-                                    text-align: start;
-                                    padding: 41px;
-                                    width: 700px;
-                                }
-                                
                                 .r-text {
                                     background-color: #793781;
                                     color: #ffff;
@@ -1021,9 +1008,3 @@
                                     width: 220px;
                                 }
                                 /*   card design template start here */
-                                /* Homepage desktop */
-                                
-                                .fs-4 {
-                                    font-size: 1.5rem!important;
-                                    padding: 0px 60px 0px 60px;
-                                }
